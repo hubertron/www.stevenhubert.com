@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CMH Redesign</title>
+    <meta name="description" content="A complete re-envisioning of CMH's online experience">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://nandomoreira.me/blog/2017/cmh/">
+    <link rel="alternate" type="application/rss+xml" title="end2end" href="http://nandomoreira.me/feed.xml" />
+  </head>
+
+  <body>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+    <main>
+      <header class="site-header">
+  <div class="container">
+    <h1><a href="/">end2<span>end</span></a></h1>
+
+    <button type="button" class="sliding-panel-button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="navbar sliding-panel-content">
+      <ul>
+        
+          <li><a href="/about" title="About">About</a></li>
+        
+          <li><a href="/blog" title="Blog">Blog</a></li>
+        
+        <li><a href="http://github.com/nandomoreirame/end2end/archive/master.zip" title="Download">Download</a></li>
+        <li><a href="/feed.xml" target="_blank"><i class="icon icon-feed"></i></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="sliding-panel-fade-screen"></div>
+
+
+      <div class="container">
+        <article role="article" class="post">
+
+  <div class="card">
+    <header class="post-header">
+      <h1 class="post-title">CMH Redesign</h1> 
+      <p class="post-meta">Apr 14, 2017 • {"name"=>"Steven Hubert", "twitter"=>"stevenhubertron", "bio"=>"Marketing Technologist and Digital Strategy Leader.", "image"=>"sh.jpg"}</p>
+    </header>
+
+    <div class="post-content">
+      <h3 id="history">History</h3>
+
+<p>The original CMH website was built on a very old version of Sitecore alongside our resort websites. It was a very heavy handed IT decision that didn’t work well for CMH. Customers and CMH employees alike were not happy with the website. At times, in order to load the list of available heli-trips users, would have to wait full minutes. The site was also poorly organized because a UX designed for a ski resort was being forced upon a heli-skiing site. We also looked at click stream data and noticed customers we having troubling finding what they were looking for.</p>
+
+<h3 id="the-project">The Project</h3>
+
+<p><img src="/images/CMH/CMH-Home.png" alt="CMH Home" /></p>
+
+<p>Through a number of collaborative working sessions with the CMH and agency teams we worked through a very detailed understanding of our customers’ flow through the website, including the type of information they are looking for and how to find more of it. We used our intuition and also tested small sets of users. Once these decisions were made, designs were created that attempted to solve the many UX issues outstanding with the old sites. We involved many team members to weigh in and to really challenge our assumptions and research in order to create a content hierarchy that balances the very different top user paths taken by those new to heli vs seasoned fliers.</p>
+
+<p>As we got ready to move into development we knew we wanted to go small, fast and nimble with this site. After the experience of having an overkill CMS, and a team with fairly technical chops the decision was made to go with the <a href="https://jamstack.org/">JAMSTACK</a> approach to have a truly static site powered by APIs for both its feed and CMS data. To accomplish this we used <a href="https://www.contentful.com/">Contentful</a> for the CMS, <a href="https://www.netlify.com/">Netlify</a> for the hosting and building of of the static pages, and <a href="https://jekyllrb.com/">Jekyll</a> as the build tool allowing for easily templating of the website.</p>
+
+<p>A lot of time was spent getting the trip grid right. It had to be familiar to existing customers while also being much more usable then the old one. The CMH and agency team spent went through many iterations to get this right in the design phase, and as a result, it’s working splendidly.</p>
+
+<p><img src="/images/CMH/booking.png" alt="Booking Grid" /></p>
+
+<p>The agency team also integrated a JSON feed that provided a mix of weather information from actual boots-on-the-ground observations and automated weather stations in order to provide an easy to understand view of ski conditions at lodges with additional specific lodge forecasts.</p>
+
+<p><strong>Weather Overview</strong>
+<img src="/images/CMH/lodge-weather.png" alt="Lodge Weather" /></p>
+
+<p><strong>Weather Detail</strong>
+<img src="/images/CMH/weather-detail.png" alt="Lodge Weather" /></p>
+
+<p><strong>Sample JSON</strong></p>
+
+<p><code>
+[{
+    "name": "Bobbie Burns",
+    "snowpack_depth": "400",
+    "air_temp_high": "8",
+    "air_temp_low": "-4",
+    "snowfall_yesterday": "5",
+    "snowfall_week": 67,
+    "atmospheric_conditions": "Scattered cloud. Moderate V wind.",
+    "timestamp": "2017-04-23T00:00:00.000-06:00"
+  },
+  {
+    "name": "Bugaboos",
+    "snowpack_depth": "350",
+    "air_temp_high": "6",
+    "air_temp_low": "-5",
+    "snowfall_yesterday": "15",
+    "snowfall_week": 82,
+    "atmospheric_conditions": "Snowing &lt;1cm/hr. Light W wind.",
+    "timestamp": "2017-04-23T00:00:00.000-06:00"
+  }]
+ </code>
+<br /><br /></p>
+
+<h3 id="the-results">The Results</h3>
+
+<p>The site launch only just occurred, so conversion based results are hard to report on a this time. I can say that by going with the JAMSTACK approach we were able to accomplish a lot more on a very limited budget while also giving customers a completely new experience that helped them understand what a CMH trip is like on a screaming fast responsive website. Both CMH and the c-level team are impressed with the design, usability and of course the budget that we were able to hit.</p>
+
+
+    </div>
+
+    
+  </div>
+
+</article>
+
+      </div>
+
+      <footer class="site-footer">
+  <div class="container">
+    <ul class="social">
+  <li><a href="http://github.com/nandomoreirame" target="_blank"><i class="icon icon-github"></i></a></li>
+  <li><a href="http://twitter.com/nandomoreirame" target="_blank"><i class="icon icon-twitter"></i></a></li>
+  <li><a href="http://facebook.com/fernando.dev" target="_blank"><i class="icon icon-facebook"></i></a></li>
+  <li><a href="http://linkedin.com/in/nandomoreirame" target="_blank"><i class="icon icon-linkedin"></i></a></li>
+</ul>
+    <p class="txt-medium-gray">
+      <small>&copy;2017 All rights reserved. Made with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> and ♥</small>
+    </p>
+  </div>
+</footer>
+
+
+      <a href="http://github.com/nandomoreirame/end2end" target="_blank" class="github-corner"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#337ab7; color:#fff; position: absolute; top: 0; border: 0; right: 0;"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+      <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script>
+      $(document).ready(function() {
+        $('.sliding-panel-button,.sliding-panel-fade-screen,.sliding-panel-close').on('click touchstart',function (e) {
+          $('.sliding-panel-content,.sliding-panel-fade-screen').toggleClass('is-visible');
+          e.preventDefault();
+        });
+      });
+      </script>
+    </main>
+  </body>
+</html>

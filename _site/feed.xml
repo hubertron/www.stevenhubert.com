@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>end2end</title>
+    <description>A free Jekyll theme for download</description>
+    <link>http://nandomoreira.me/</link>
+    <atom:link href="http://nandomoreira.me/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 19 Jun 2017 15:43:59 -0600</pubDate>
+    <lastBuildDate>Mon, 19 Jun 2017 15:43:59 -0600</lastBuildDate>
+    <generator>Jekyll v3.1.1</generator>
+    
+      <item>
+        <title>QuickTrax Alerts</title>
+        <description>&lt;h3 id=&quot;overview&quot;&gt;Overview&lt;/h3&gt;
+
+&lt;p&gt;QuickTrax Alerts is much much more than the snow alert text messaging service you may know from Winter Park or Steamboat. It is a complete business-critical system for all Intrawest resorts to report on key mountain information in one centralized place before being distributed across many channels for consumption by the end user.&lt;/p&gt;
+
+&lt;p&gt;This product has evolved significantly from the initial problem this application sought to solve, and it has become a key part of our infrastructure at Intrawest.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-problem&quot;&gt;The Problem&lt;/h3&gt;
+
+&lt;p&gt;Reporting daily on mountain conditions such as new snowfall, temperature, snow conditions, lift, trail, and activity status was a major chore for snow reporters and webmasters. With the previous setup, they would have to log into multiple systems every day, revising multiple fields in order to update their websites/emails on a site that was further limited by functioning only on the desktop computers for a limited set of browsers.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-solution&quot;&gt;The Solution&lt;/h3&gt;
+
+&lt;p&gt;Build a responsive admin panel that served as the single point of truth for all relevant mountain statistics. A system that allows a snow reporter to update data in a single location and have that data update the website, email, text message, Alexa App, and other 3rd party consumers of the website&lt;/p&gt;
+
+&lt;h4 id=&quot;approach&quot;&gt;Approach&lt;/h4&gt;
+
+&lt;p&gt;This project started the old-fashioned way: Sketches on a whiteboard, followed by markers on paper. Each of our six resorts reported on snow/weather slightly differently so many, many rounds of presentation/feedback/revision were necessary in order to determine the best UI and relevant data points that each resort required in order to communicate to their guests consistently and easily. Nailing the UI was pretty easy (the bar was quite low here), but agreeing on a consistent list of snow conditions proved to be difficult. The drop-down list reads like an Eskimo’s 100 words for snow:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+Corn snow
+Fine granular
+Firm
+Frozen granular
+Groomed powder
+Hard pack
+Icy
+Loose granular
+Machine groomed
+Machine groomed frozen granular
+Machine groomed loose granular
+Machine groomed packed powder
+Machine groomed variable conditions
+Machine made
+Man made snow
+Marginal conditions
+Mix of powder and loose granular
+New natural snow
+Packed powder
+Packed powder and fine granular
+Packed powder machine made
+Packed powder spring
+Powder
+Powder machine groomed
+Powder packed powder
+Skier pack
+Skier pack powder
+Soft
+Spring
+Spring conditions
+Variable conditions
+Wet granular
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Despite this minor quibble with the size of a drop-down list all 6 resorts were happy with the new interface and method of reporting&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/QTA/Screenshot%202017-05-05%2010.15.55.png&quot; alt=&quot;Winter Park’s Trail Reporting in Tablet View&quot; title=&quot;Winter Park’s Trail Reporting in Tablet View&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/QTA/Screenshot%202017-05-05%2010.17.30.png&quot; alt=&quot;Winter Parks Trail Reporting in Tablet view&quot; title=&quot;Winter Parks Trail Reporting in Tablet view&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;What is being shown here is the interface the snow reporters use in order to update the mountain information everyday. It’s not a public facing view, and is only used for data entry. The intent was to be able to update as much as one can with the least amount of clicks. The old system required clicks into each item in order to update. This new layout, while very busy,  makes it very easy to update many rows in one fell swoop. A key requirement of the now reporting team.&lt;/p&gt;
+
+&lt;p&gt;In addition to creating Snow/Lift/Trail/Activity reporting, we also consumed weather feeds from our stations on the mountain. Prior to this project many ad-hoc weather station systems were set up. Through the course of this project we migrated all of these stations to report to Weather Underground. &lt;a href=&quot;https://www.wunderground.com/cgi-bin/findweather/getForecast?query=pws:KCOWINTE7&quot;&gt;Here&lt;/a&gt; is an example of Winter Park’s Mary Jane station.&lt;/p&gt;
+
+&lt;p&gt;Once all weather stations were migrated we then pulled in their information from Weather Underground to the QuickTrax Alerts app. From here, we allowed snow reporters to override the data. We didn’t do this to deceive the customer, (the data was right there in Weather Underground anyway, so if we did, it would be fairly easy to uncover); We did this because weather stations break. They can freeze over with rime ice during as storm and report 32° when it’s actually -10° out. The anemometer can break so the wind say 0 MPG when it is really gusting at 80. Or, a hungry animal can get in the way and break our feed to the internet. This override feature allows us to address any of these situations while still providing accurate information to our customers, so that they can prepare for their days on the mountain with us.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/QTA/Unknown.jpeg&quot; alt=&quot;Winter Park Squirrels - Thanks to Patrick D for the photo&quot; title=&quot;Winter Park Squirrels  Thanks to Patrick D for the photo.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/QTA/Screenshot%202017-05-05%2010.38.27.png&quot; alt=&quot;Overrides&quot; title=&quot;Overrides&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The last problem solved for the reporters by this tool is audit logging. Previously, every time a reporter updated the report he or she printed up the updated page and added it to a file cabinet. So, there were literally reams of paper that showed when snowfall increased half an inch that change got printed up and filed. This had to be done for legal reasons as there was no other way to prove whether there was an update or not. The new QuickTrax Alerts system provides a reporting tool that lets you select the category of changes you are interested in, plus the time range and you can download a detailed log of each and every change.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/QTA/Screenshot%202017-05-05%2011.14.53.png&quot; alt=&quot;History Download&quot; title=&quot;History Download&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To recap the benefits for the reporters, this tool now allows them to update all mountain information in one place, lets them update anything from their mobile device and saves them time and paper printing up each and every change. These benefits alone would more than justify the development effort here. However, many customer benefits were also gained by this effort.&lt;/p&gt;
+
+&lt;h4 id=&quot;customer-benefits&quot;&gt;Customer Benefits&lt;/h4&gt;
+
+&lt;p&gt;The most outward benefit is, of course, accurate weather reporting and mountain conditions on our redesigned websites. Users have basically an operations panel outlining the status of the mountain on one easy-to-understand page. &lt;a href=&quot;https://www.bluemountain.ca/mountain/conditions-report&quot;&gt;https://www.bluemountain.ca/mountain/conditions-report&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/QTA/Screenshot%202017-05-05%2011.23.59.png&quot; alt=&quot;Stratton Weather Page&quot; title=&quot;Stratton Weather Page&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This page is powered by a JSON feed (with an XML feed also available) that powers many other customer facing experiences including….&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/QTA/printable.png&quot; alt=&quot;Printable Report&quot; title=&quot;Printable Report&quot; /&gt;
+A printable trail report used at the front desk of local lodging destinations&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/QTA/signage.png&quot; alt=&quot;Digital Signage&quot; title=&quot;Digital Signage&quot; /&gt;
+Digital Signage used at the resorts.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/QTA/Screenshot%202017-05-05%2014.15.33.png&quot; alt=&quot;Winter Park Email&quot; title=&quot;Winter Park Email&quot; /&gt;
+We also integrated with Watson (IBMs) Marketing Cloud API so that the data is included in the daily snow report email that our resorts send out. We write to a DB table with updated data on a set publishing schedule, and then the data in that table gets automatically populated into the email and delivered to the customer.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/JhiBijpIYgA&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;We also made some custom feeds that allowed us to create a custom Alexa Notification that can be added to one’s flash briefing for an up to date description of the conditions at the Intrawest resort of your choice. The creation of this app allows for seamless integration into your news day.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/QTA/Screenshot%202017-05-05.png&quot; alt=&quot;Alert Signup&quot; title=&quot;Alert Signup&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Lastly the website &lt;a href=&quot;http://alerts.quicktrax.com&quot;&gt;http://alerts.quicktrax.com&lt;/a&gt; was created to allow customers to sign up for text message alerts when specific user-selectable thresholds were met. For example if I wanted a photo of the snowstake whenever there is snow I can sign up for that, or if I only want to know when 12” has fallen, or is expected in the next 48 hours, I can sign up for those as well. This website allows our pass holders to rest easy knowing that they will never miss a powder day.&lt;/p&gt;
+
+&lt;p&gt;We knew it would be sensitive getting users to give their phone numbers to us, so we worked with our legal team to specifically create a wall between this website and our other more marketing-specific websites. Any phone number entered here will NEVER get spammed by us or sent any sort of marketing messages. This is a strictly transactional website. Customers get what they requested, nothing more, nothing less. Sign-ups here have been extremely successful with well over 100K text messages being successfully delivered every month of the season. If you are a skier and go to our mountains this is a fantastic app to sign up for as it stays out of your way when it isn’t snowing.&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;As you can see, what started out a simple app to make the Snow Reporter experience more efficient turned out to become a multi-faceted product that provides value to our customers through a large number of verticals. Through smart planning and extensible technology we were able to deliver a product that can work for users on their terms. I’m extremely proud of how this came out and look forward to many years of usage at all of our resorts.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 29 May 2017 19:43:50 -0600</pubDate>
+        <link>http://nandomoreira.me/blog/2017/qta/</link>
+        <guid isPermaLink="true">http://nandomoreira.me/blog/2017/qta/</guid>
+        
+        <category>intrawest</category>
+        
+        <category>technology</category>
+        
+        <category>digital strategy</category>
+        
+        <category>development</category>
+        
+        
+        <category>digital strategy</category>
+        
+        <category>technology</category>
+        
+        <category>development</category>
+        
+      </item>
+    
+      <item>
+        <title>CMH Redesign</title>
+        <description>&lt;h3 id=&quot;history&quot;&gt;History&lt;/h3&gt;
+
+&lt;p&gt;The original CMH website was built on a very old version of Sitecore alongside our resort websites. It was a very heavy handed IT decision that didn’t work well for CMH. Customers and CMH employees alike were not happy with the website. At times, in order to load the list of available heli-trips users, would have to wait full minutes. The site was also poorly organized because a UX designed for a ski resort was being forced upon a heli-skiing site. We also looked at click stream data and noticed customers we having troubling finding what they were looking for.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-project&quot;&gt;The Project&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/CMH/CMH-Home.png&quot; alt=&quot;CMH Home&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Through a number of collaborative working sessions with the CMH and agency teams we worked through a very detailed understanding of our customers’ flow through the website, including the type of information they are looking for and how to find more of it. We used our intuition and also tested small sets of users. Once these decisions were made, designs were created that attempted to solve the many UX issues outstanding with the old sites. We involved many team members to weigh in and to really challenge our assumptions and research in order to create a content hierarchy that balances the very different top user paths taken by those new to heli vs seasoned fliers.&lt;/p&gt;
+
+&lt;p&gt;As we got ready to move into development we knew we wanted to go small, fast and nimble with this site. After the experience of having an overkill CMS, and a team with fairly technical chops the decision was made to go with the &lt;a href=&quot;https://jamstack.org/&quot;&gt;JAMSTACK&lt;/a&gt; approach to have a truly static site powered by APIs for both its feed and CMS data. To accomplish this we used &lt;a href=&quot;https://www.contentful.com/&quot;&gt;Contentful&lt;/a&gt; for the CMS, &lt;a href=&quot;https://www.netlify.com/&quot;&gt;Netlify&lt;/a&gt; for the hosting and building of of the static pages, and &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; as the build tool allowing for easily templating of the website.&lt;/p&gt;
+
+&lt;p&gt;A lot of time was spent getting the trip grid right. It had to be familiar to existing customers while also being much more usable then the old one. The CMH and agency team spent went through many iterations to get this right in the design phase, and as a result, it’s working splendidly.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/CMH/booking.png&quot; alt=&quot;Booking Grid&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The agency team also integrated a JSON feed that provided a mix of weather information from actual boots-on-the-ground observations and automated weather stations in order to provide an easy to understand view of ski conditions at lodges with additional specific lodge forecasts.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Weather Overview&lt;/strong&gt;
+&lt;img src=&quot;/images/CMH/lodge-weather.png&quot; alt=&quot;Lodge Weather&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Weather Detail&lt;/strong&gt;
+&lt;img src=&quot;/images/CMH/weather-detail.png&quot; alt=&quot;Lodge Weather&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Sample JSON&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+[{
+    &quot;name&quot;: &quot;Bobbie Burns&quot;,
+    &quot;snowpack_depth&quot;: &quot;400&quot;,
+    &quot;air_temp_high&quot;: &quot;8&quot;,
+    &quot;air_temp_low&quot;: &quot;-4&quot;,
+    &quot;snowfall_yesterday&quot;: &quot;5&quot;,
+    &quot;snowfall_week&quot;: 67,
+    &quot;atmospheric_conditions&quot;: &quot;Scattered cloud. Moderate V wind.&quot;,
+    &quot;timestamp&quot;: &quot;2017-04-23T00:00:00.000-06:00&quot;
+  },
+  {
+    &quot;name&quot;: &quot;Bugaboos&quot;,
+    &quot;snowpack_depth&quot;: &quot;350&quot;,
+    &quot;air_temp_high&quot;: &quot;6&quot;,
+    &quot;air_temp_low&quot;: &quot;-5&quot;,
+    &quot;snowfall_yesterday&quot;: &quot;15&quot;,
+    &quot;snowfall_week&quot;: 82,
+    &quot;atmospheric_conditions&quot;: &quot;Snowing &amp;lt;1cm/hr. Light W wind.&quot;,
+    &quot;timestamp&quot;: &quot;2017-04-23T00:00:00.000-06:00&quot;
+  }]
+ &lt;/code&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;the-results&quot;&gt;The Results&lt;/h3&gt;
+
+&lt;p&gt;The site launch only just occurred, so conversion based results are hard to report on a this time. I can say that by going with the JAMSTACK approach we were able to accomplish a lot more on a very limited budget while also giving customers a completely new experience that helped them understand what a CMH trip is like on a screaming fast responsive website. Both CMH and the c-level team are impressed with the design, usability and of course the budget that we were able to hit.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 14 Apr 2017 19:43:50 -0600</pubDate>
+        <link>http://nandomoreira.me/blog/2017/cmh/</link>
+        <guid isPermaLink="true">http://nandomoreira.me/blog/2017/cmh/</guid>
+        
+        <category>intrawest</category>
+        
+        <category>technology</category>
+        
+        <category>digital strategy</category>
+        
+        <category>development</category>
+        
+        
+        <category>digital strategy</category>
+        
+        <category>technology</category>
+        
+        <category>development</category>
+        
+      </item>
+    
+      <item>
+        <title>Ski Colorado Redesign</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/sc_home.png&quot; alt=&quot;Ski Colorado Homepage&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;March is pass sales season here at Intrawest, and this season we’ve launched a brand new site for https://www.skicolorado.com. First and foremost, we wanted to simplify the site to feature our most important product, the Rocky Mountain Super Pass + (RSMP+). The old site ( view it here: &lt;a href=&quot;http://bit.ly/2nK78AP&quot;&gt;Ski Colorado Archive&lt;/a&gt; ) was previously designed to sell products from our entire mountain pass portfolio, however, based on the analytics it was easy to see that the RSMP+ was the hero product and thus deserving of hero treatment.&lt;/p&gt;
+
+&lt;p&gt;With this initial direction we set out to design a flexible, responsive and fast website that would be an easy adjustment for longtime customers returning to renew their passes. We did this by clearly dedicating sections of the website in easy-to-understand chunks and providing a very concise FAQ that answers what we think are the questions customers are most likely to have, based on some excellent insight from our Guest Services team, up at Winter Park.&lt;/p&gt;
+
+&lt;p&gt;Based on initial heat mapping and NPS responses we think we are off to a good start, but will continue to monitor as the season gets further underway.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/p1372.jpeg&quot; alt=&quot;SkiColorado Heatmap&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;With site speed being the focus, we decided to go the static website route using &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; and hosting with &lt;a href=&quot;https://www.netlify.com/&quot;&gt;Netlify&lt;/a&gt; a fantastic static site hosting service we use for a number of our websites, including the very rich and dynamic &lt;a href=&quot;https://www.canadianmountainholidays.com/&quot;&gt;CMH&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The difference in raw performance using this approach is clearly illustrated by these Pingdom results:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/pingdom.jpg&quot; alt=&quot;Pingdom Results&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s important to bear in mind this is an “A” rating for a very image-heavy website with plenty of fancy javascript to handle virtual pages, and various other user actions. No small accomplishment.&lt;/p&gt;
+
+&lt;p&gt;Despite being a static website, we still needed a CMS to make timely updates to rates, FAQs, etc. In planning for this, we integrated a lightweight static CMS provider called &lt;a href=&quot;https://forestry.io/&quot;&gt;Forestry&lt;/a&gt;. With Forestry anyone can easily add/edit text and images without the need for a developer. This has allowed the marketing team to be incredibly responsive to changes as they are needed.&lt;/p&gt;
+
+&lt;p&gt;With the new site also came increasingly detailed analytics data and the ability to A/B test and personalize copy/images/CTAs based on a huge number of different attributes, thanks to a much loved tool called &lt;a href=&quot;https://www.convert.com/&quot;&gt;Convert&lt;/a&gt;. We are able to message our Texas customers differently than our Colorado or New York customers, test CTAs, and/or colors. By integrating this tool we hope to improve our overall conversation rate just like we have done using the tool on &lt;a href=&quot;https://www.themaxpass.com/&quot;&gt;TheMaxPass.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Lastly, and perhaps most importantly, this site was architected, designed, built, written and optimized completely in-house here at Intrawest. We could have easily spent in the high five figures to have an agency learn about our brand, our requirements and our content only to design and build a site that doesn’t perform as well as this one will. I am incredibly proud of the team at Intrawest for pulling this off.  What may seem like a simple site actually packs a lot of marketing intelligence and good design practices behind it while also performing extremely well for the end user. I hope we can continue the trend away from engaging outside web agencies for these smaller scale projects, instead using in-house teams that can bring expertise to aspects of our website development.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/videos/skico-responsive.gif&quot; alt=&quot;Animation&quot; /&gt;
+Sample of responsive content changes.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 14 Mar 2017 19:43:50 -0600</pubDate>
+        <link>http://nandomoreira.me/blog/2017/skicolorado/</link>
+        <guid isPermaLink="true">http://nandomoreira.me/blog/2017/skicolorado/</guid>
+        
+        <category>intrawest</category>
+        
+        <category>technology</category>
+        
+        <category>digital strategy</category>
+        
+        <category>development</category>
+        
+        
+        <category>digital strategy</category>
+        
+        <category>technology</category>
+        
+        <category>development</category>
+        
+      </item>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 26 Nov 2015 06:46:52 -0700</pubDate>
+        <link>http://nandomoreira.me/blog/2015/welcome-to-jekyll/</link>
+        <guid isPermaLink="true">http://nandomoreira.me/blog/2015/welcome-to-jekyll/</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update,</category>
+        
+        <category>cats</category>
+        
+      </item>
+    
+      <item>
+        <title>DigitalGlobe Sales Conference</title>
+        <description>&lt;p&gt;During my time at Mondo Robot I executive produced the digital and print components of DigitalGlobes annual sales conference. The keynote intro is always a huge point of anticipation for the sales employees and with the year’s theme being “Go Big” we couldn’t go bigger than having the VP of Sales jump out of a plane right before his keynote.&lt;/p&gt;
+
+&lt;p&gt;This video played on 3, 40ft tall screens for the approximately 1000 employees at the conference.&lt;/p&gt;
+
+&lt;video class=&quot;featured wide   /&quot; controls=&quot;&quot; poster=&quot;/images/dg1.jpg&quot; width=&quot;100%&quot; height=&quot;100%&quot; preload=&quot;auto&quot; onclick=&quot;(function(el){ if(el.paused) el.play(); else el.pause() })(this)&quot;&gt;&lt;source src=&quot;/videos/DGIntroFull.mp4&quot; type=&quot;video/mp4; codecs=&amp;quot;avc1.42E01E, mp4a.40.2&amp;quot;&quot; /&gt;&lt;/video&gt;
+
+&lt;p&gt;What followed was the VP of Sales entering the conference room still in skydiving clothes ready to start the keynote. The crowd went wild and it really set the stage for an energetic and invigorating sales conference. 
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once the excitement subsided a bit we went into the presentation containing custom created 3d animations that were controlled in real time to match the pacing and nuances of the speakers. We carefully balanced our work to not detract from the speaker but to enhance the experience for all.
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;video class=&quot;featured wide   /&quot; controls=&quot;&quot; poster=&quot;/images/dg1.jpg&quot; width=&quot;100%&quot; height=&quot;100%&quot; preload=&quot;auto&quot; onclick=&quot;(function(el){ if(el.paused) el.play(); else el.pause() })(this)&quot;&gt;&lt;source src=&quot;/videos/DG.mp4&quot; type=&quot;video/mp4; codecs=&amp;quot;avc1.42E01E, mp4a.40.2&amp;quot;&quot; /&gt;&lt;/video&gt;
+
+&lt;p&gt;Finally to increase the excitement we designed a set of posters, gobos, and handouts that set the mood as attendees entered the conference.
+&lt;br /&gt;
+&lt;img src=&quot;/images/DG_Print_Banners_620.png&quot; alt=&quot;Globe&quot; /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;All of these elements combined to create a truly memorable experience that will leave the attendees feeling charged up and ready to succeed for DigitalGlobe.
+&lt;br /&gt;
+&lt;img src=&quot;/images/dg_globe.png&quot; alt=&quot;Globe&quot; /&gt;
+&lt;img src=&quot;/images/dg_data.png&quot; alt=&quot;Data&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 16 Feb 2014 18:43:50 -0700</pubDate>
+        <link>http://nandomoreira.me/blog/2014/digitalglobesales/</link>
+        <guid isPermaLink="true">http://nandomoreira.me/blog/2014/digitalglobesales/</guid>
+        
+        <category>digital globe</category>
+        
+        <category>event</category>
+        
+        <category>motion graphics</category>
+        
+        
+        <category>Project Management</category>
+        
+        <category>Event Production</category>
+        
+      </item>
+    
+      <item>
+        <title>Canon North Pole Pixma</title>
+        <description>&lt;p&gt;During my time at Mondo Robot I executive produced a first of its kind video compositing application that in near-real time provided users a customized video with their child’s christmas wish.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/North-Pole-PIXMA-Image-Snow-Globe-Event.jpg&quot; alt=&quot;North Pole Pixma&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The Canon North Pole PIXMA app provides a unique and interactive experience allows children to write, draw or use pre-selected images to create their holiday wish on Desktop or Mobile. Once the wish has been customized, it gets composited in near real time to a sharable video, where users can watch a video of Santa receiving their wish printed on a Canon PIXMA printer.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/PismaWishList.png&quot; alt=&quot;Customize Screen&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This personalized Facebook experience was optimized for desktop, tablet and mobile making the site fully responsive. Unique creation tools were developed to allow users to draw, type or utilize a set of pre-determined images to create their personalized wish list for Santa. Part of the magic of this experience was the speed at which the users could create a wish list and watch it being printed at the North Pole for Santa to see. To make this happen, the wish was tracked to the video, optimized and encoded in near real-time for desktop as well as mobile.&lt;/p&gt;
+
+&lt;video class=&quot;featured wide   /&quot; controls=&quot;&quot; poster=&quot;/images/canon1.jpg&quot; width=&quot;100%&quot; height=&quot;100%&quot; preload=&quot;auto&quot; onclick=&quot;(function(el){ if(el.paused) el.play(); else el.pause() })(this)&quot;&gt;&lt;source src=&quot;/videos/canon.mp4&quot; type=&quot;video/mp4; codecs=&amp;quot;avc1.42E01E, mp4a.40.2&amp;quot;&quot; /&gt;&lt;/video&gt;
+
+&lt;p&gt;This application was a first of a kind accomplishment that relied a large number of Amazon AWS render servers running custom C++ and FFMPEG code rendering out a real MP4 video on demand from the user. The servers tracked and composited the wish list on the video, along with shadows and highlight to ensure things looked real. Thanks to this application users could view and save their very own personalized video.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/Canon_04.jpg&quot; alt=&quot;Video Screen&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 26 Nov 2013 18:43:50 -0700</pubDate>
+        <link>http://nandomoreira.me/blog/2013/canon/</link>
+        <guid isPermaLink="true">http://nandomoreira.me/blog/2013/canon/</guid>
+        
+        <category>grey</category>
+        
+        <category>consumer goods</category>
+        
+        <category>facebook app</category>
+        
+        <category>canon</category>
+        
+        
+        <category>Project Management</category>
+        
+        <category>Interactive Production</category>
+        
+      </item>
+    
+      <item>
+        <title>Ketel One - A Gentleman&#39;s Call</title>
+        <description>&lt;p&gt;A Gentleman’s Call by Ketel One was a campaign to encourage men across America to regain their long forgotten gentlemanly personalities by showing America what they would do to make the world a better place given if $100K.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ketel1.jpg&quot; alt=&quot;Ketel One Homepage&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;During my time at Grey NY I had the opportunity to executive produce this project. The ask was simple. Encourage gentleman around the US to describe how they make world a better place in order to possibly win $100K. We built an entry tool into a custom Facebook application, which was than whittled down to 5 finalists that would then have a video shot by Vice profiling them. The video was then posted on social and the public was then able to vote on which of the 5 would win the $100K.
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ketel2.jpg&quot; alt=&quot;Video Screen&quot; /&gt;
+&lt;br /&gt;
+Entrants had the ability to customize the visual direction for their idea, and encourage others to vote them up through Facebook Likes and social mentions. The whole thing was backed by a custom CMS that allows us to moderate in real-time any objectionable content.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;strong&gt;Meet the Finalists Video&lt;/strong&gt;
+An amalgamation of the 5 different videos.&lt;/p&gt;
+&lt;video class=&quot;featured wide&quot; controls=&quot;&quot; poster=&quot;/images/k1.jpg&quot; width=&quot;100%&quot; height=&quot;100%&quot; preload=&quot;auto&quot; onclick=&quot;(function(el){ if(el.paused) el.play(); else el.pause() })(this)&quot;&gt;&lt;source src=&quot;/videos/MeettheFinalists.mp4&quot; type=&quot;video/mp4; codecs=&amp;quot;avc1.42E01E, mp4a.40.2&amp;quot;&quot; /&gt;&lt;/video&gt;
+&lt;blockquote&gt;
+
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Winning Video&lt;/strong&gt;
+The ultimate winner was Corbin Clay who is the owner of &lt;a href=&quot;https://azurefurniture.com/&quot;&gt;Azure Furniture&lt;/a&gt; who makes beetle kill furniture. His products are so great I ending up buying a custom kitchen table from him a few months after he won.&lt;/p&gt;
+&lt;video class=&quot;featured wide&quot; controls=&quot;&quot; poster=&quot;/images/k2.jpg&quot; width=&quot;100%&quot; height=&quot;100%&quot; preload=&quot;auto&quot; onclick=&quot;(function(el){ if(el.paused) el.play(); else el.pause() })(this)&quot;&gt;&lt;source src=&quot;/videos/ToasttoCorbinClay.mp4&quot; type=&quot;video/mp4; codecs=&amp;quot;avc1.42E01E, mp4a.40.2&amp;quot;&quot; /&gt;&lt;/video&gt;
+&lt;blockquote&gt;
+
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the end we had 10’s of thousands of well thought out, comprehensive entries. By differentiating our contest from other more normal “Enter To Win” contests we generated a significant amount of earned media which helped tremendously given our limited budget.&lt;/p&gt;
+
+&lt;p&gt;Some press mentions include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://online.wsj.com/article/PR-CO-20130125-910422.html&quot;&gt;Wall Street Journal&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://303magazine.com/2013/01/50-shades-of-green-mpb-meets-mvp/&quot;&gt;303 Magazine&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.dezeen.com/2012/07/20/call-for-entries-to-a-gentlemans-call-for-ketel-one-vodka/&quot;&gt;DeZeen&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.interviewmagazine.com/culture/ketel-one-a-gentlemans-call/&quot;&gt;Interview Magazine&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://goodmenproject.com/good-work/ketel-one-and-gq-issue-a-gentlemans-call/&quot;&gt;Good Men Project&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.theawl.com/2012/11/ketel-one-sponsored&quot;&gt;The Awl&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.businessinsider.com/ketel-one-gentlemans-call-2012-7&quot;&gt;Business Insider&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://elitedaily.com/money/entrepreneurship/gentlemans-call-gq-ketel-pursuit/&quot;&gt;Elite Daily&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 25 Nov 2013 18:43:50 -0700</pubDate>
+        <link>http://nandomoreira.me/blog/2013/ketel1/</link>
+        <guid isPermaLink="true">http://nandomoreira.me/blog/2013/ketel1/</guid>
+        
+        <category>grey</category>
+        
+        <category>consumer goods</category>
+        
+        <category>facebook app</category>
+        
+        
+        <category>Project Management</category>
+        
+        <category>Interactive Production</category>
+        
+      </item>
+    
+      <item>
+        <title>Mike&#39;s Hard Lemonade Digital</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/nombre.png&quot; alt=&quot;Sign Up&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;During my time at Grey NY I served as the executive producer focusing on bringing attention to Mike’s Hard as an alternative drink option for millennials by increasing the presence of Mike’s Hard in the social space through a number of really fun social apps including the following.&lt;/p&gt;
+
+&lt;h3 id=&quot;mikes-mariachi&quot;&gt;Mike’s Mariachi&lt;/h3&gt;
+&lt;p&gt;On Cuatro de Mayo we commissioned a local Brooklyn band, dressed them up as Mariachi characters and have them play songs written in real time by by a team of copywriters that received inspiration from live tweets.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/Mariachi+Live+Stream.jpg&quot; alt=&quot;Mike&#39;s Mariachi&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A novel &lt;a href=&quot;/images/workflow.png&quot;&gt;workflow&lt;/a&gt; was developed ensuring legal compliance and creative approval before each song was sung. The steps were as follows:&lt;br /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Tweets get added to a Google doc&lt;/li&gt;
+  &lt;li&gt;A copywriter claims the tweet&lt;/li&gt;
+  &lt;li&gt;Lyrics are written&lt;/li&gt;
+  &lt;li&gt;Lyrics are then marked as approved by a Creative Director&lt;/li&gt;
+  &lt;li&gt;Lyrics are then marked as approved by Legal&lt;/li&gt;
+  &lt;li&gt;Lyrics are finally loaded into the teleprompter to be sung by the band&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This allowed us to work very smoothly and without drama during the live event. It was a fantastically effective tool that helped allow the campaign to be a breakout success.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Promo Video&lt;/strong&gt;
+We promoted the live event with a video teaser on social and paid advertising&lt;/p&gt;
+&lt;video class=&quot;featured wide   /&quot; controls=&quot;&quot; poster=&quot;/images/mm1.jpg&quot; width=&quot;100%&quot; height=&quot;100%&quot; preload=&quot;auto&quot; onclick=&quot;(function(el){ if(el.paused) el.play(); else el.pause() })(this)&quot;&gt;&lt;source src=&quot;/videos/MikesMariachi.mp4&quot; type=&quot;video/mp4; codecs=&amp;quot;avc1.42E01E, mp4a.40.2&amp;quot;&quot; /&gt;&lt;/video&gt;
+
+&lt;p&gt;&lt;strong&gt;Pre-Event Videos&lt;/strong&gt;
+Videos like this were produced for customers to add their name and have a video delivered custom for them.&lt;/p&gt;
+&lt;video class=&quot;featured wide   /&quot; controls=&quot;&quot; poster=&quot;/images/mhl.jpg&quot; width=&quot;100%&quot; height=&quot;100%&quot; preload=&quot;auto&quot; onclick=&quot;(function(el){ if(el.paused) el.play(); else el.pause() })(this)&quot;&gt;&lt;source src=&quot;/videos/name_vides.mp4&quot; type=&quot;video/mp4; codecs=&amp;quot;avc1.42E01E, mp4a.40.2&amp;quot;&quot; /&gt;&lt;/video&gt;
+
+&lt;p&gt;We got some great press&lt;br /&gt;
+- &lt;a href=&quot;http://www.mediabistro.com/agencyspy/mikes-hard-lemonade-band-will-mariachi-ize-just-about-any-song_b32710&quot;&gt;Agency Spy - Mike’s Mariachi&lt;/a&gt;
+- &lt;a href=&quot;http://www.cspnet.com/category-management-news-data/beverages-news-data/articles/mikes-hard-lemonade-launches-new-ad&quot;&gt;CSP&lt;/a&gt;
+- &lt;a href=&quot;http://www.adweek.com/adfreak/mikes-hard-lemonade-welcomes-some-unexpected-visitors-142143&quot;&gt;Ad Week&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I also led about a dozen other social campaigns throughout the Mike’s Hard selling season. All we just as off the wall as the Mariachi band and generated plenty of buzz and social media conversation around the brand that previously didn’t exist in social.&lt;/p&gt;
+
+&lt;h3 id=&quot;bear-in-a-bikini-sweepstakes&quot;&gt;Bear in a Bikini Sweepstakes&lt;/h3&gt;
+&lt;p&gt;This was a classic sweepstakes where anyone could enter from Mike’s facebook page to have a VIP experience in South Beach for labor day weekend. This was the video produced promoting it on social.&lt;/p&gt;
+&lt;video class=&quot;featured wide&quot; controls=&quot;&quot; poster=&quot;/images/bik1.png&quot; width=&quot;100%&quot; height=&quot;100%&quot; preload=&quot;auto&quot; onclick=&quot;(function(el){ if(el.paused) el.play(); else el.pause() })(this)&quot;&gt;&lt;source src=&quot;/videos/BearinaBikini.mp4&quot; type=&quot;video/mp4; codecs=&amp;quot;avc1.42E01E, mp4a.40.2&amp;quot;&quot; /&gt;&lt;/video&gt;
+&lt;blockquote&gt;
+
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;strong&gt;Winner Recap&lt;/strong&gt;
+This video posted on social recapped the winners experience in South Beach&lt;/p&gt;
+&lt;video class=&quot;featured wide&quot; controls=&quot;&quot; poster=&quot;/images/bik2.jpg&quot; width=&quot;100%&quot; height=&quot;100%&quot; preload=&quot;auto&quot; onclick=&quot;(function(el){ if(el.paused) el.play(); else el.pause() })(this)&quot;&gt;&lt;source src=&quot;/videos/MikesLaborDay.mp4&quot; type=&quot;video/mp4; codecs=&amp;quot;avc1.42E01E, mp4a.40.2&amp;quot;&quot; /&gt;&lt;/video&gt;
+&lt;blockquote&gt;
+
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;score-the-fourth&quot;&gt;Score the Fourth&lt;/h3&gt;
+&lt;p&gt;A clever facebook app was developed where users could use a predefined soundboard or add their own sounds to a library of ridiculous sound clips in order to score their own ridiculous 4th of July celebration&lt;/p&gt;
+&lt;video class=&quot;featured wide&quot; controls=&quot;&quot; poster=&quot;/images/stf.jpg&quot; width=&quot;100%&quot; height=&quot;100%&quot; preload=&quot;auto&quot; onclick=&quot;(function(el){ if(el.paused) el.play(); else el.pause() })(this)&quot;&gt;&lt;source src=&quot;/videos/scorethe4th.mp4&quot; type=&quot;video/mp4; codecs=&amp;quot;avc1.42E01E, mp4a.40.2&amp;quot;&quot; /&gt;&lt;/video&gt;
+&lt;blockquote&gt;
+
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;img src=&quot;/images/MikesScreenShot.jpg&quot; alt=&quot;Mike&#39;s Website&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 26 Dec 2012 18:43:50 -0700</pubDate>
+        <link>http://nandomoreira.me/blog/2012/mhl/</link>
+        <guid isPermaLink="true">http://nandomoreira.me/blog/2012/mhl/</guid>
+        
+        <category>grey</category>
+        
+        <category>consumer goods</category>
+        
+        <category>facebook app</category>
+        
+        <category>mikes hard lemonade</category>
+        
+        
+        <category>Project Management</category>
+        
+        <category>Interactive Production</category>
+        
+      </item>
+    
+      <item>
+        <title>JFK Library - We Choose the Moon</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://www.wechoosethemoon.org&quot;&gt;WeChooseTheMoon.org&lt;/a&gt; is an interactive re-creation of the historic Apollo 11 mission to the moon, inspired by John F. Kennedy’s grand vision. A re-creation that over 3.5 million people have taken to date. A million of which visited on the very first day to experience in real time as all the world did in 1969.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/moon1.jpg&quot; alt=&quot;Homepage&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;During my time at Domani Studios I had an amazing opportunity to work with the Martin Agency and the JFK Library to create a piece of history that the would stand the test of time. We Choose The Moon has and still doing that (provided you still use Adobe Flash).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://tv.adobe.com/en/watch/traditional-media-in-transition/domani-studios-we-choose-the-moon/&quot;&gt;Watch Adobe Featurette&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;The creation of this site was unlike any site I have worked on. We needed to build a site that would in effective handle 1MM concurrent users that are watching the Apollo mission in real-time. We did this through the use of 200 servers provided by AOL, Akaimai for video streaming, and Limelight for mp3 streaming of the actual 4 days of audio recorded during the actual mission. If managing all of that wasn’t enough we had to make sure it all synced together. Luckily we got it right, were featured on &lt;a href=&quot;http://www.youtube.com/watch?v=K_iQfqqILUQ&quot;&gt;CNN&lt;/a&gt;, and were the #1 trending topic on Twitter for about 6 hours.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cannes Entry&lt;/strong&gt;
+We won big at Cannes with 5 gold lions. A number unprecedented in digital at the time. This was the entry video&lt;/p&gt;
+&lt;video class=&quot;featured wide&quot; controls=&quot;&quot; poster=&quot;/images/wctm1.jpg&quot; width=&quot;700px&quot; height=&quot;394px&quot; preload=&quot;auto&quot; onclick=&quot;(function(el){ if(el.paused) el.play(); else el.pause() })(this)&quot;&gt;&lt;source src=&quot;/videos/WeChooseTheMoon.mp4&quot; type=&quot;video/mp4; codecs=&amp;quot;avc1.42E01E, mp4a.40.2&amp;quot;&quot; /&gt;&lt;/video&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Awards&lt;/strong&gt;
+There are some of the many awards we received:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.thefwa.com/site/we-choose-the-moon?c=SOTYPCA&quot;&gt;FWA Site of the Year&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;5 Cannes Gold Lions&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://sxsw.com/interactive/awards/past-winners&quot;&gt;SXSW Web Awards: Motion Graphics&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;London International Awards: GOLD&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Communication Arts Webpick&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Creativity Top Pick&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Hive Awards&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Complete Launch Sequence&lt;/strong&gt;
+This is an export of the complete motion graphic launch sequence.&lt;/p&gt;
+&lt;video class=&quot;featured wide&quot; controls=&quot;&quot; poster=&quot;/images/wctm2.jpg&quot; width=&quot;700px&quot; height=&quot;438px&quot; preload=&quot;auto&quot; onclick=&quot;(function(el){ if(el.paused) el.play(); else el.pause() })(this)&quot;&gt;&lt;source src=&quot;/videos/WCTM_Launch.mp4&quot; type=&quot;video/mp4; codecs=&amp;quot;avc1.42E01E, mp4a.40.2&amp;quot;&quot; /&gt;&lt;/video&gt;
+</description>
+        <pubDate>Fri, 26 Nov 2010 18:43:50 -0700</pubDate>
+        <link>http://nandomoreira.me/blog/2010/wechoosethemoon/</link>
+        <guid isPermaLink="true">http://nandomoreira.me/blog/2010/wechoosethemoon/</guid>
+        
+        <category>award-winning</category>
+        
+        <category>site of the year</category>
+        
+        <category>jfk</category>
+        
+        <category>museum</category>
+        
+        <category>flash</category>
+        
+        <category>domaini studios</category>
+        
+        
+        <category>Project Management</category>
+        
+        <category>Interactive Production</category>
+        
+      </item>
+    
+  </channel>
+</rss>
