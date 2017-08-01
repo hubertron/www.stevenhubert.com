@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>end2end</title>
-    <description>A free Jekyll theme for download</description>
-    <link>http://nandomoreira.me/</link>
-    <atom:link href="http://nandomoreira.me/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 19 Jun 2017 15:43:59 -0600</pubDate>
-    <lastBuildDate>Mon, 19 Jun 2017 15:43:59 -0600</lastBuildDate>
+    <title>Steven Hubert | Marketing Technologist | Denver Colorado</title>
+    <description>Selected case studies and samples of work</description>
+    <link>https://www.stevenhubert.com/</link>
+    <atom:link href="https://www.stevenhubert.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 01 Aug 2017 14:45:36 -0600</pubDate>
+    <lastBuildDate>Tue, 01 Aug 2017 14:45:36 -0600</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
     
       <item>
@@ -27,22 +27,12 @@
 
 &lt;h4 id=&quot;approach&quot;&gt;Approach&lt;/h4&gt;
 
-&lt;p&gt;This project started the old-fashioned way: Sketches on a whiteboard, followed by markers on paper. Each of our six resorts reported on snow/weather slightly differently so many, many rounds of presentation/feedback/revision were necessary in order to determine the best UI and relevant data points that each resort required in order to communicate to their guests consistently and easily. Nailing the UI was pretty easy (the bar was quite low here), but agreeing on a consistent list of snow conditions proved to be difficult. The drop-down list reads like an Eskimo’s 100 words for snow:&lt;/p&gt;
+&lt;p&gt;This project started the old-fashioned way: Sketches on a whiteboard, followed by markers on paper. Each of our six resorts reported on snow/weather slightly differently so many, many rounds of presentation/feedback/revision were necessary in order to determine the best UI and relevant data points that each resort required in order to communicate to their guests consistently and easily. Nailing the UI was pretty easy (the bar was quite low here), but agreeing on a consistent list of snow conditions proved to be difficult. A partial drop-down list reads like an Eskimo’s 100 words for snow:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-Corn snow
-Fine granular
-Firm
-Frozen granular
-Groomed powder
-Hard pack
-Icy
-Loose granular
-Machine groomed
-Machine groomed frozen granular
-Machine groomed loose granular
-Machine groomed packed powder
-Machine groomed variable conditions
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+Machine groomed loose granular  
+Machine groomed packed powder  
+Machine groomed variable conditions  
 Machine made
 Man made snow
 Marginal conditions
@@ -64,9 +54,7 @@ Variable conditions
 Wet granular
 &lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Despite this minor quibble with the size of a drop-down list all 6 resorts were happy with the new interface and method of reporting&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/QTA/Screenshot%202017-05-05%2010.15.55.png&quot; alt=&quot;Winter Park’s Trail Reporting in Tablet View&quot; title=&quot;Winter Park’s Trail Reporting in Tablet View&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/QTA/Screenshot%202017-05-05%2010.15.55.png&quot; alt=&quot;Winter Park’s Snow Reporting in Tablet View&quot; title=&quot;Winter Park’s Trail Reporting in Tablet View&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/QTA/Screenshot%202017-05-05%2010.17.30.png&quot; alt=&quot;Winter Parks Trail Reporting in Tablet view&quot; title=&quot;Winter Parks Trail Reporting in Tablet view&quot; /&gt;&lt;/p&gt;
 
@@ -74,13 +62,17 @@ Wet granular
 
 &lt;p&gt;In addition to creating Snow/Lift/Trail/Activity reporting, we also consumed weather feeds from our stations on the mountain. Prior to this project many ad-hoc weather station systems were set up. Through the course of this project we migrated all of these stations to report to Weather Underground. &lt;a href=&quot;https://www.wunderground.com/cgi-bin/findweather/getForecast?query=pws:KCOWINTE7&quot;&gt;Here&lt;/a&gt; is an example of Winter Park’s Mary Jane station.&lt;/p&gt;
 
-&lt;p&gt;Once all weather stations were migrated we then pulled in their information from Weather Underground to the QuickTrax Alerts app. From here, we allowed snow reporters to override the data. We didn’t do this to deceive the customer, (the data was right there in Weather Underground anyway, so if we did, it would be fairly easy to uncover); We did this because weather stations break. They can freeze over with rime ice during as storm and report 32° when it’s actually -10° out. The anemometer can break so the wind say 0 MPG when it is really gusting at 80. Or, a hungry animal can get in the way and break our feed to the internet. This override feature allows us to address any of these situations while still providing accurate information to our customers, so that they can prepare for their days on the mountain with us.&lt;/p&gt;
+&lt;p&gt;Once all weather stations were migrated we then pulled in their information from Weather Underground to the QuickTrax Alerts app. From here, we allowed snow reporters to override the data. We didn’t do this to deceive the customer, (the data was right there in Weather Underground anyway, so if we did, it would be fairly easy to uncover); We did this because weather stations break.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/QTA/Unknown.jpeg&quot; alt=&quot;Winter Park Squirrels - Thanks to Patrick D for the photo&quot; title=&quot;Winter Park Squirrels  Thanks to Patrick D for the photo.&quot; /&gt;&lt;/p&gt;
 
+&lt;p&gt;They can freeze over with rime ice during as storm and report 32° when it’s actually -10° out. The anemometer can break so the wind say 0 MPG when it is really gusting at 80. Or, a hungry animal can get in the way and break our feed to the internet. This override feature allows us to address any of these situations while still providing accurate information to our customers, so that they can prepare for their days on the mountain with us.&lt;/p&gt;
+
+&lt;p&gt;The last problem solved for the reporters by this tool is audit logging.&lt;/p&gt;
+
 &lt;p&gt;&lt;img src=&quot;/images/QTA/Screenshot%202017-05-05%2010.38.27.png&quot; alt=&quot;Overrides&quot; title=&quot;Overrides&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;The last problem solved for the reporters by this tool is audit logging. Previously, every time a reporter updated the report he or she printed up the updated page and added it to a file cabinet. So, there were literally reams of paper that showed when snowfall increased half an inch that change got printed up and filed. This had to be done for legal reasons as there was no other way to prove whether there was an update or not. The new QuickTrax Alerts system provides a reporting tool that lets you select the category of changes you are interested in, plus the time range and you can download a detailed log of each and every change.&lt;/p&gt;
+&lt;p&gt;Previously, every time a reporter updated the report he or she printed up the updated page and added it to a file cabinet. So, there were literally reams of paper that showed when snowfall increased half an inch that change got printed up and filed. This had to be done for legal reasons as there was no other way to prove whether there was an update or not. The new QuickTrax Alerts system provides a reporting tool that lets you select the category of changes you are interested in, plus the time range and you can download a detailed log of each and every change.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/QTA/Screenshot%202017-05-05%2011.14.53.png&quot; alt=&quot;History Download&quot; title=&quot;History Download&quot; /&gt;&lt;/p&gt;
 
@@ -119,8 +111,8 @@ We also integrated with Watson (IBMs) Marketing Cloud API so that the data is in
 
 </description>
         <pubDate>Mon, 29 May 2017 19:43:50 -0600</pubDate>
-        <link>http://nandomoreira.me/blog/2017/qta/</link>
-        <guid isPermaLink="true">http://nandomoreira.me/blog/2017/qta/</guid>
+        <link>https://www.stevenhubert.com/blog/2017/qta/</link>
+        <guid isPermaLink="true">https://www.stevenhubert.com/blog/2017/qta/</guid>
         
         <category>intrawest</category>
         
@@ -167,7 +159,7 @@ We also integrated with Watson (IBMs) Marketing Cloud API so that the data is in
 
 &lt;p&gt;&lt;strong&gt;Sample JSON&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
 [{
     &quot;name&quot;: &quot;Bobbie Burns&quot;,
     &quot;snowpack_depth&quot;: &quot;400&quot;,
@@ -197,16 +189,16 @@ We also integrated with Watson (IBMs) Marketing Cloud API so that the data is in
 
 </description>
         <pubDate>Fri, 14 Apr 2017 19:43:50 -0600</pubDate>
-        <link>http://nandomoreira.me/blog/2017/cmh/</link>
-        <guid isPermaLink="true">http://nandomoreira.me/blog/2017/cmh/</guid>
+        <link>https://www.stevenhubert.com/blog/2017/cmh/</link>
+        <guid isPermaLink="true">https://www.stevenhubert.com/blog/2017/cmh/</guid>
         
-        <category>intrawest</category>
+        <category>Intrawest</category>
         
-        <category>technology</category>
+        <category>Technology</category>
         
-        <category>digital strategy</category>
+        <category>Digital Strategy</category>
         
-        <category>development</category>
+        <category>Development</category>
         
         
         <category>digital strategy</category>
@@ -247,8 +239,8 @@ We also integrated with Watson (IBMs) Marketing Cloud API so that the data is in
 Sample of responsive content changes.&lt;/p&gt;
 </description>
         <pubDate>Tue, 14 Mar 2017 19:43:50 -0600</pubDate>
-        <link>http://nandomoreira.me/blog/2017/skicolorado/</link>
-        <guid isPermaLink="true">http://nandomoreira.me/blog/2017/skicolorado/</guid>
+        <link>https://www.stevenhubert.com/blog/2017/skicolorado/</link>
+        <guid isPermaLink="true">https://www.stevenhubert.com/blog/2017/skicolorado/</guid>
         
         <category>intrawest</category>
         
@@ -264,36 +256,6 @@ Sample of responsive content changes.&lt;/p&gt;
         <category>technology</category>
         
         <category>development</category>
-        
-      </item>
-    
-      <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 26 Nov 2015 06:46:52 -0700</pubDate>
-        <link>http://nandomoreira.me/blog/2015/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://nandomoreira.me/blog/2015/welcome-to-jekyll/</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update,</category>
-        
-        <category>cats</category>
         
       </item>
     
@@ -324,8 +286,8 @@ Sample of responsive content changes.&lt;/p&gt;
 &lt;img src=&quot;/images/dg_data.png&quot; alt=&quot;Data&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 16 Feb 2014 18:43:50 -0700</pubDate>
-        <link>http://nandomoreira.me/blog/2014/digitalglobesales/</link>
-        <guid isPermaLink="true">http://nandomoreira.me/blog/2014/digitalglobesales/</guid>
+        <link>https://www.stevenhubert.com/blog/2014/digitalglobesales/</link>
+        <guid isPermaLink="true">https://www.stevenhubert.com/blog/2014/digitalglobesales/</guid>
         
         <category>digital globe</category>
         
@@ -359,8 +321,8 @@ Sample of responsive content changes.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/images/Canon_04.jpg&quot; alt=&quot;Video Screen&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 26 Nov 2013 18:43:50 -0700</pubDate>
-        <link>http://nandomoreira.me/blog/2013/canon/</link>
-        <guid isPermaLink="true">http://nandomoreira.me/blog/2013/canon/</guid>
+        <link>https://www.stevenhubert.com/blog/2013/canon/</link>
+        <guid isPermaLink="true">https://www.stevenhubert.com/blog/2013/canon/</guid>
         
         <category>grey</category>
         
@@ -425,8 +387,8 @@ The ultimate winner was Corbin Clay who is the owner of &lt;a href=&quot;https:/
 &lt;/ul&gt;
 </description>
         <pubDate>Mon, 25 Nov 2013 18:43:50 -0700</pubDate>
-        <link>http://nandomoreira.me/blog/2013/ketel1/</link>
-        <guid isPermaLink="true">http://nandomoreira.me/blog/2013/ketel1/</guid>
+        <link>https://www.stevenhubert.com/blog/2013/ketel1/</link>
+        <guid isPermaLink="true">https://www.stevenhubert.com/blog/2013/ketel1/</guid>
         
         <category>grey</category>
         
@@ -506,8 +468,8 @@ This video posted on social recapped the winners experience in South Beach&lt;/p
 &lt;img src=&quot;/images/MikesScreenShot.jpg&quot; alt=&quot;Mike&#39;s Website&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 26 Dec 2012 18:43:50 -0700</pubDate>
-        <link>http://nandomoreira.me/blog/2012/mhl/</link>
-        <guid isPermaLink="true">http://nandomoreira.me/blog/2012/mhl/</guid>
+        <link>https://www.stevenhubert.com/blog/2012/mhl/</link>
+        <guid isPermaLink="true">https://www.stevenhubert.com/blog/2012/mhl/</guid>
         
         <category>grey</category>
         
@@ -561,8 +523,8 @@ This is an export of the complete motion graphic launch sequence.&lt;/p&gt;
 &lt;video class=&quot;featured wide&quot; controls=&quot;&quot; poster=&quot;/images/wctm2.jpg&quot; width=&quot;700px&quot; height=&quot;438px&quot; preload=&quot;auto&quot; onclick=&quot;(function(el){ if(el.paused) el.play(); else el.pause() })(this)&quot;&gt;&lt;source src=&quot;/videos/WCTM_Launch.mp4&quot; type=&quot;video/mp4; codecs=&amp;quot;avc1.42E01E, mp4a.40.2&amp;quot;&quot; /&gt;&lt;/video&gt;
 </description>
         <pubDate>Fri, 26 Nov 2010 18:43:50 -0700</pubDate>
-        <link>http://nandomoreira.me/blog/2010/wechoosethemoon/</link>
-        <guid isPermaLink="true">http://nandomoreira.me/blog/2010/wechoosethemoon/</guid>
+        <link>https://www.stevenhubert.com/blog/2010/wechoosethemoon/</link>
+        <guid isPermaLink="true">https://www.stevenhubert.com/blog/2010/wechoosethemoon/</guid>
         
         <category>award-winning</category>
         

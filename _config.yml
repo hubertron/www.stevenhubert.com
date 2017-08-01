@@ -1,11 +1,18 @@
 # Build settings
 permalink   : /blog/:year/:title/
-markdown    : kramdown
-highlighter : pygments
 gems: [jekyll-paginate]
 
+kramdown:
+  # Use GitHub flavored markdown, including triple backtick fenced code blocks
+  input: GFM
+  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    # Use existing pygments syntax highlighting css
+    css_class: 'highlight'
+
 paginate: 10
-paginate_path: "/blog/page/:num/"
+paginate_path: "/work/page/:num/"
 comments: true
 
 source: source
@@ -15,30 +22,30 @@ sass:
   style: compressed # expanded
 
 # SEO settings
-title: end2end
-description: "A free Jekyll theme for download"
-keywords: "Jekyll, theme, free, download, SEO, blog, web"
-url: http://nandomoreira.me
+title: Steven Hubert | Marketing Technologist | Denver Colorado
+description: "Selected case studies and samples of work"
+keywords: "steven hubert, denver, colorado, marketing, technology, advertising, project management, digital producer"
+url: https://www.stevenhubert.com
 baseurl: ""
-# baseurl: ""
+
 
 # google_analytics: UA-52446115-1
-repo: http://github.com/nandomoreirame/end2end
-disqus_shortname: "nandothemes"
-disqus_site_shortname: "nandothemes"
+#repo: http://github.com/nandomoreirame/end2end
+#disqus_shortname: "nandothemes"
+#disqus_site_shortname: "nandothemes"
 
 # Author settings
 author:
-  name      : Fernando Moreira
-  job       : Frontend Engineer
-  bio       : "Enthusiast performance, responsive design and usability, always looking for the best project and good coffee."
-  thumb     : /images/author.jpg
-  email     : nandomoreira.me@gmail.com
-  url       : http://nandomoreira.me
-  github    : http://github.com/nandomoreirame
-  twitter   : http://twitter.com/nandomoreirame
-  facebook  : http://facebook.com/fernando.dev
-  linkedin  : http://linkedin.com/in/nandomoreirame
+  name      : Steven Hubert
+  job       : Marketing Technologist
+  bio       : "Enthusiastically bridging the divide between IT, Marketing and Advertising by leveraging new technologies and novel work approaches to deliver meaningful content to customers and businesses alike."
+  thumb     : /images/sh.jpg
+  #email     : nandomoreira.me@gmail.com
+  url       : https://www.stevenhubert.com
+  github    : http://github.com/hubertron
+  twitter   : http://twitter.com/stevenhubertron
+  #facebook  : http://facebook.com/fernando.dev
+  linkedin  : http://linkedin.com/in/stevenhubert
 
 # navbar pages
 navbar:
@@ -48,7 +55,7 @@ navbar:
   #   title: Resume
   # - slug: skills
   #   title: Skills
-  - slug: blog
-    title: Blog
+  - slug: work
+    title: Selected Work
 
 exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]

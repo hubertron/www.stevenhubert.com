@@ -12,5 +12,5 @@
     </h1>
   </header>
 
-  <p><a href="{{ post.url | prepend: site.baseurl }}" title="Permalink to: {{ post.title }}" class="read-more">{{ post.content | strip_html | truncatewords: 40 }}</a></p>
+  <p><a href="{{ post.url | prepend: site.baseurl }}" title="Permalink to: {{ post.title }}" class="read-more">{{ post.excerpt | strip_html | truncatewords: 40 }}</a></p>
 </article>
