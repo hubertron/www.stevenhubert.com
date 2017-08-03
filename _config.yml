@@ -12,8 +12,12 @@ kramdown:
     css_class: 'highlight'
 
 paginate: 10
-paginate_path: "/work/page/:num/"
+paginate_path: "/blog/page/:num/"
 comments: true
+
+collections:
+  works:
+    output: true
 
 source: source
 destination: _site
@@ -57,5 +61,7 @@ navbar:
   #   title: Skills
   - slug: work
     title: Selected Work
+  - slug: blog
+    title: Thoughts
 
 exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
