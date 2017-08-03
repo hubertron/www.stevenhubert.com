@@ -33,10 +33,7 @@ url: https://www.stevenhubert.com
 baseurl: ""
 
 
-# google_analytics: UA-52446115-1
-#repo: http://github.com/nandomoreirame/end2end
-#disqus_shortname: "nandothemes"
-#disqus_site_shortname: "nandothemes"
+google_analytics: UA-1735487-1
 
 # Author settings
 author:
@@ -44,21 +41,16 @@ author:
   job       : marketing technology leader
   bio       : "I enthusiastically bridge the divide between IT, Marketing and AdTech by implementing new technologies and novel work approaches to deliver meaningful content to customers and businesses alike."
   thumb     : /images/sh.jpg
-  #email     : nandomoreira.me@gmail.com
+
   url       : https://www.stevenhubert.com
   github    : http://github.com/hubertron
   twitter   : http://twitter.com/stevenhubertron
-  #facebook  : http://facebook.com/fernando.dev
   linkedin  : http://linkedin.com/in/stevenhubert
 
 # navbar pages
 navbar:
   - slug: about
     title: About
-  # - slug: resume
-  #   title: Resume
-  # - slug: skills
-  #   title: Skills
   - slug: work
     title: Selected Work
   - slug: blog
