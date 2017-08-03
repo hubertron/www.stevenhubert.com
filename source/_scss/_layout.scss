@@ -409,16 +409,21 @@ figure {
   }
 }
 
-.post-content img {
-  max-width: 50%;
-  float: left;
-  padding: 0 10px 10px 0;
-}
-
-.post-content img:after { 
+/* .post-content img:after { 
   content: "";
   visibility: hidden;
   display: block;
   height: 0;
   clear: both;
+} */
+
+img + em { 
+  display: block; 
+  text-align: center;
+  clear:both;
+  font-size: 16px;
+  padding: 0 0 40px 0;
+  margin-top: -38px;
+  font-family: $heading-font-family;
+  
 }
