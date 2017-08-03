@@ -7,6 +7,7 @@ date: 2017-05-30 01:43:50
 categories: [digital strategy, technology, development]
 tags: [intrawest, technology, digital strategy, development]
 excerpt: "A business-critical system for all Intrawest resorts to report on key mountain information in one centralized place. "
+featured-image: /images/QTA/qta_thumb.jpg
 comments: false
 author: 
  name: Steven Hubert

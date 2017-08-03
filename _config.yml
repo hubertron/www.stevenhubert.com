@@ -41,8 +41,8 @@ baseurl: ""
 # Author settings
 author:
   name      : Steven Hubert
-  job       : Marketing Technologist
-  bio       : "Enthusiastically bridging the divide between IT, Marketing and Advertising by leveraging new technologies and novel work approaches to deliver meaningful content to customers and businesses alike."
+  job       : a marketing technology leader
+  bio       : "I enthusiastically bridge the divide between IT, Marketing and AdTech by implementing new technologies and novel work approaches to deliver meaningful content to customers and businesses alike."
   thumb     : /images/sh.jpg
   #email     : nandomoreira.me@gmail.com
   url       : https://www.stevenhubert.com

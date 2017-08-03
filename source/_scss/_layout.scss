@@ -259,8 +259,9 @@ body.home {
 
 .post-title {
   font-size: rem(40);
-  margin-bottom: 0;
-  line-height: 1.5em;
+  margin-bottom: 10px;
+  line-height: 1.2em;
+  border-bottom: 1px rgba($light-gray-color, .3) dotted;
 }
 
 .post-list {
@@ -426,4 +427,42 @@ img + em {
   margin-top: -38px;
   font-family: $heading-font-family;
   
+}
+
+.work {
+  max-width: 1200px;
+}
+
+.work-list {
+  float: left;
+  display: inline-block;
+  width: 350px;
+  margin: 10px;
+  
+
+  img {
+    height: 197px;
+  }
+
+  h1 {
+    font-size: 1.4em;
+    line-height: 1em;
+    font-weight: bold;
+  }
+
+  .feature-image {
+    margin: 0 -1.8em 0.8em -1.8em
+  }
+
+  .post {
+    padding-top: 0;
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .post-header {
+    margin-bottom: .8em;
+  }
+
+
 }
