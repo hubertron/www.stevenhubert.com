@@ -20,11 +20,13 @@ During my time at Mondo Robot I executive produced a first of its kind video com
 
 
 ![North Pole Pixma](/images/North-Pole-PIXMA-Image-Snow-Globe-Event.jpg)
+*Canon North Pole Pixma Start Page*
 
 
 The Canon North Pole PIXMA app provides a unique and interactive experience allows children to write, draw or use pre-selected images to create their holiday wish on Desktop or Mobile. Once the wish has been customized, it gets composited in near real time to a sharable video, where users can watch a video of Santa receiving their wish printed on a Canon PIXMA printer.
 
 ![Customize Screen](/images/PismaWishList.png)
+*Customize Screen*
 
 This personalized Facebook experience was optimized for desktop, tablet and mobile making the site fully responsive. Unique creation tools were developed to allow users to draw, type or utilize a set of pre-determined images to create their personalized wish list for Santa. Part of the magic of this experience was the speed at which the users could create a wish list and watch it being printed at the North Pole for Santa to see. To make this happen, the wish was tracked to the video, optimized and encoded in near real-time for desktop as well as mobile.
 
@@ -35,3 +37,4 @@ This application was a first of a kind accomplishment that relied a large number
 
 
 ![Video Screen](/images/Canon_04.jpg)
+*Video Screen*

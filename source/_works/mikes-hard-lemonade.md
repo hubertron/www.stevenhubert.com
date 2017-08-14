@@ -17,6 +17,7 @@ author:
 ---
 
 ![Sign Up](/images/nombre.png)
+*Nombre's Facebook Signup*
 
 During my time at Grey NY I served as the executive producer focusing on bringing attention to Mike's Hard as an alternative drink option for millennials by increasing the presence of Mike's Hard in the social space through a number of really fun social apps including the following.
 
@@ -25,6 +26,7 @@ On Cuatro de Mayo we commissioned a local Brooklyn band, dressed them up as Mari
 
 
 ![Mike's Mariachi](/images/Mariachi+Live+Stream.jpg)
+*Mike's Mariachi Live Stream*
 
 
 A novel [workflow](/images/workflow.png) was developed ensuring legal compliance and creative approval before each song was sung. The steps were as follows:<br />
@@ -63,9 +65,10 @@ This was a classic sweepstakes where anyone could enter from Mike's facebook pag
 {% video featured wide /images/bik1.png /videos/BearinaBikini.mp4  100% 100% preload:auto %}>
 
 <br />
-**Winner Recap**
+
+###Winner Recap
 This video posted on social recapped the winners experience in South Beach
-{% video featured wide /images/bik2.jpg /videos/MikesLaborDay.mp4  100% 100% preload:auto %}>
+{% video featured wide /images/bik2.jpg /videos/MikesLaborDay.mp4 100% 100% preload:auto %}>
 
 ### Score the Fourth
 A clever facebook app was developed where users could use a predefined soundboard or add their own sounds to a library of ridiculous sound clips in order to score their own ridiculous 4th of July celebration
@@ -73,3 +76,4 @@ A clever facebook app was developed where users could use a predefined soundboar
 
 <br />
 ![Mike's Website](/images/MikesScreenShot.jpg)
+*Mike's Website*

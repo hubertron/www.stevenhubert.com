@@ -20,6 +20,7 @@ author:
 [WeChooseTheMoon.org](http://www.wechoosethemoon.org) is an interactive re-creation of the historic Apollo 11 mission to the moon, inspired by John F. Kennedy's grand vision. A re-creation that over 3.5 million people have taken to date. A million of which visited on the very first day to experience in real time as all the world did in 1969.
 
 ![Homepage](/images/moon1.jpg)
+*We Choose The Moon Homepage*
 
 During my time at Domani Studios I had an amazing opportunity to work with the Martin Agency and the JFK Library to create a piece of history that the would stand the test of time. We Choose The Moon has and still doing that (provided you still use Adobe Flash).
 

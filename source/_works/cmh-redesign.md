@@ -23,6 +23,7 @@ The original CMH website was built on a very old version of Sitecore alongside o
 ### The Project
 
 ![CMH Home](/images/CMH/CMH-Home.png)
+*Homepage of new CMH website*
 
 Through a number of collaborative working sessions with the CMH and agency teams we worked through a very detailed understanding of our customers’ flow through the website, including the type of information they are looking for and how to find more of it. We used our intuition and also tested small sets of users. Once these decisions were made, designs were created that attempted to solve the many UX issues outstanding with the old sites. We involved many team members to weigh in and to really challenge our assumptions and research in order to create a content hierarchy that balances the very different top user paths taken by those new to heli vs seasoned fliers. 
 
@@ -32,20 +33,22 @@ As we got ready to move into development we knew we wanted to go small, fast and
 A lot of time was spent getting the trip grid right. It had to be familiar to existing customers while also being much more usable then the old one. The CMH and agency team spent went through many iterations to get this right in the design phase, and as a result, it’s working splendidly.
 
 ![Booking Grid](/images/CMH/booking.png)
+*Sample of the new booking grid*
 
 The agency team also integrated a JSON feed that provided a mix of weather information from actual boots-on-the-ground observations and automated weather stations in order to provide an easy to understand view of ski conditions at lodges with additional specific lodge forecasts.
 
-**Weather Overview**
+####Weather Reporting
 ![Lodge Weather](/images/CMH/lodge-weather.png)
+*Lodge Weather*
 
-**Weather Detail**
 ![Lodge Weather](/images/CMH/weather-detail.png)
+*Lodge Weather Details*
 
 **Sample JSON**
 
-```
-[{
-    "name": "Bobbie Burns",
+  ```
+  [{  
+    "name": "Bobbie Burns",  
     "snowpack_depth": "400",
     "air_temp_high": "8",
     "air_temp_low": "-4",
@@ -65,7 +68,6 @@ The agency team also integrated a JSON feed that provided a mix of weather infor
     "timestamp": "2017-04-23T00:00:00.000-06:00"
   }]
   ```
-<br /><br />
 
 ### The Results
 

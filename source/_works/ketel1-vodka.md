@@ -20,6 +20,7 @@ A Gentleman's Call by Ketel One was a campaign to encourage men across America t
 
 
 ![Ketel One Homepage](/images/ketel1.jpg)
+*Ketel One Contest Homepage*
 
 <br />
 
