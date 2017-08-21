@@ -264,6 +264,14 @@ body.home {
   border-bottom: 1px rgba($light-gray-color, .3) dotted;
 }
 
+ol, ul {
+  list-style: disc;
+}
+
+ul {
+  padding-bottom: 15px;
+}
+
 .post-list {
   .post {
     @extend .card;
@@ -286,7 +294,8 @@ body.home {
       &:focus {
         
       }
-      
+   
+
     }
   }
 }
