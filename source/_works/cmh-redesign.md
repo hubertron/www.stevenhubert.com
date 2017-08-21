@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CMH Redesign
+title: CMH Heli-Skiing Website Redesign
 client: Intrawest
 agency: Intrawest
 date: 2017-04-15 01:43:50
@@ -11,7 +11,7 @@ tags:
   - Technology
   - Digital Strategy
   - Development
-excerpt: "A complete re-envisioning of CMH's online experience"
+excerpt: "A complete re-envisioning of CMH's online experience built using the latest front-end technology and featuring a static site CMS."
 comments: false
 ---
 

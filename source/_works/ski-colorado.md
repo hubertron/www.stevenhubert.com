@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ski Colorado Redesign
+title: Ski Colorado Ski Pass Redesign
 client: Intrawest
 agency: Intrawest
 date: 2017-03-15 01:43:50
 featured-image: /images/bg_passdetail@2x.jpg
 categories: [digital strategy, technology, development]
 tags: [intrawest, technology, digital strategy, development]
-excerpt: "A fast and clean redesign of a beloved Colorado ski pass website"
+excerpt: "A fast and clean redesign of a beloved Colorado ski pass website backed by a static site CMS featuring quick load times and clear messaging."
 comments: false
 author: 
  name: Steven Hubert
