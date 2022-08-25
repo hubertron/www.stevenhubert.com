@@ -25,7 +25,7 @@ sass:
 
 # SEO settings
 title: Steven Hubert | Digital Product &amp; UX | NYC Bred, Denver Based
-description: 'Selected case studies and samples of work'
+description: 'Digital leader with 20 years experience leading UX and Product product teams both agency and client side.'
 keywords: 'steven hubert, denver, colorado, marketing, technology, advertising, project management, digital producer'
 url: https://www.stevenhubert.com
 baseurl: ''
@@ -35,7 +35,7 @@ google_analytics: UA-1735487-1
 # Author settings
 author:
   name: Steven Hubert
-  job: director of digital product
+  job: Digital Product and UX leader
   bio: 'I enthusiastically bridge the divide between IT, Marketing and AdTech by implementing new technologies and novel work approaches to deliver meaningful content to customers and businesses alike.'
   thumb: /images/sh.jpg
 
@@ -48,10 +48,6 @@ author:
 navbar:
   - slug: about
     title: About
-  - slug: work
-    title: Selected Work
-  - slug: blog
-    title: Thoughts
 
 exclude:
   [

@@ -1,22 +1,24 @@
 ---
-layout: home
+layout: default
+title: Selected Work
 ---
 
 <section class="hero">
+  <p>
+    <img src="{{ site.author.thumb | prepend: site.baseurl }}" alt="author thumb" class="dot"  />
+    <h1>👋 Hello!</h1>
+    <h3>
+      I'm <strong itemprop="name">{{ site.author.name }}</strong>, a <em itemprop="jobTitle">{{ site.author.job }}</em>.
+    </h3>
+    <h4 class=h4hero>{{ site.author.bio }}</h4>
+  </p>
 
-  <div class="hero-inner container">
+</section>
 
-    <img src="{{ site.author.thumb | prepend: site.baseurl }}" alt="author thumb" class="dot">
-    <h1>Hello!</h1>
-    <h3>I'm <strong itemprop="name">{{ site.author.name }}</strong>, a <em itemprop="jobTitle">{{ site.author.job }}</em>.</h3>
-    <h3>{{ site.author.bio }}</h3>
-
-    <a href="{{ '/about' | prepend: site.baseurl }}" class="btn btn-ghost">about</a>
-    <a href="{{ '/work' | prepend: site.baseurl }}" class="btn btn-ghost">selected work</a>
-    <a href="https://medium.com/@stevenhubertron" class="btn btn-ghost">thoughts</a>
-
-    {% include social.html %}
-
-  </div>
-
+<section class="post-list">
+<!-- Jekylls collections cannot do sorting in the include statement, need to assign ahead of time  -->
+{% assign works = site.works | sort: 'date' | reverse %}
+  {% for work in works   %}
+    {% include work-page.html %}
+  {% endfor %}
 </section>
