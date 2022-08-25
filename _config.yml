@@ -1,5 +1,5 @@
 # Build settings
-permalink   : /blog/:year/:title/
+permalink: /blog/:year/:title/
 gems: [jekyll-paginate]
 
 kramdown:
@@ -10,7 +10,7 @@ kramdown:
 highlighter: rouge
 
 paginate: 10
-paginate_path: "/blog/page/:num/"
+paginate_path: '/blog/page/:num/'
 comments: true
 
 collections:
@@ -24,26 +24,25 @@ sass:
   style: compressed # expanded
 
 # SEO settings
-title: Steven Hubert | Marketing Technologist | Denver Colorado
-description: "Selected case studies and samples of work"
-keywords: "steven hubert, denver, colorado, marketing, technology, advertising, project management, digital producer"
+title: Steven Hubert | Digital Product &amp; UX | NYC Bred, Denver Based
+description: 'Selected case studies and samples of work'
+keywords: 'steven hubert, denver, colorado, marketing, technology, advertising, project management, digital producer'
 url: https://www.stevenhubert.com
-baseurl: ""
-
+baseurl: ''
 
 google_analytics: UA-1735487-1
 
 # Author settings
 author:
-  name      : Steven Hubert
-  job       : director of digital product
-  bio       : "I enthusiastically bridge the divide between IT, Marketing and AdTech by implementing new technologies and novel work approaches to deliver meaningful content to customers and businesses alike."
-  thumb     : /images/sh.jpg
+  name: Steven Hubert
+  job: director of digital product
+  bio: 'I enthusiastically bridge the divide between IT, Marketing and AdTech by implementing new technologies and novel work approaches to deliver meaningful content to customers and businesses alike.'
+  thumb: /images/sh.jpg
 
-  url       : https://www.stevenhubert.com
-  github    : http://github.com/hubertron
-  twitter   : http://twitter.com/stevenhubertron
-  linkedin  : http://linkedin.com/in/stevenhubert
+  url: https://www.stevenhubert.com
+  github: http://github.com/hubertron
+  twitter: http://twitter.com/stevenhubertron
+  linkedin: http://linkedin.com/in/stevenhubert
 
 # navbar pages
 navbar:
@@ -54,4 +53,21 @@ navbar:
   - slug: blog
     title: Thoughts
 
-exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
+exclude:
+  [
+    'gulp',
+    'node_modules',
+    'bower',
+    'bower_components',
+    'config.rb',
+    'src',
+    'Gemfile',
+    'Gemfile.lock',
+    '.rvmrc',
+    '.rbenv-version',
+    'package.json',
+    'gulpfile.js',
+    'README.md',
+    'Rakefile',
+    'changelog.md',
+  ]
