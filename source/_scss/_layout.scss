@@ -1,7 +1,7 @@
 /*=====================================
 =            Layout styles            =
 =====================================*/
-@import url("//fonts.googleapis.com/css?family=Open+Sans:400,300,700");
+@import url('//fonts.googleapis.com/css?family=Open+Sans:400,300,700');
 
 html,
 body {
@@ -11,19 +11,16 @@ body {
 
 body {
   border-top: 5px solid $primary-color;
+  background: linear-gradient(115deg, #de6bff, #028ade, #db3535);
+  background-attachment: fixed;
 
-      background: linear-gradient(115deg, #de6bff, #02abde);
-      background-attachment: fixed;
-  
-
-  
   //background-color: $very-light-gray-color;
   //background: $base-background-color url("../images/bg-pattern.png");
   //background-image: url("https://www.transparenttextures.com/patterns/back-pattern.png");
   //background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
   //background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
   //background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
- //background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
+  //background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
   //background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
   //background-image: url("https://www.transparenttextures.com/patterns/cream-dust.png");
 }
@@ -33,20 +30,15 @@ body {
   padding: {
     left: $small-spacing;
     right: $small-spacing;
-  };
+  }
 }
 
 .card {
   background-color: $white-color;
-  box-shadow: 0 10px 7px -5px rgba(#000, .4);
-  
+  box-shadow: 0 10px 7px -5px rgba(#000, 0.4);
+
   margin: 0 0 $base-spacing;
   padding: $base-spacing $small-spacing;
-
-  @include media($mobile-up) {
-    padding: $base-spacing;
-  }
-  
 }
 
 .site-header {
@@ -54,7 +46,7 @@ body {
   background-color: $white-color;
   padding: 0;
   margin-bottom: $base-spacing;
-  border-bottom: 1px solid rgba($light-gray-color, .5);
+  border-bottom: 1px solid rgba($light-gray-color, 0.5);
 
   h1 {
     margin: 0;
@@ -68,7 +60,8 @@ body {
     }
   }
 
-  h1, a {
+  h1,
+  a {
     text-transform: lowercase;
   }
 
@@ -87,20 +80,16 @@ body {
     }
   }
 }
-  
 
 .navbar {
-  li, a {
+  li,
+  a {
     display: inline-block;
   }
 
   a {
     padding: 5px 15px;
-
-    
   }
-
-  
 }
 
 .btn {
@@ -120,36 +109,35 @@ body {
     filter: alpha(opacity=65);
     -webkit-box-shadow: none;
     box-shadow: none;
-    opacity: .65;
+    opacity: 0.65;
   }
 }
 
 // home hero presentation
 body.home {
   width: 100%;
-
 }
 
 .hero {
   text-align: center;
   display: block;
   background: linear-gradient(115deg, #efefef, #ffffff, #efefef);
- 
+
   max-width: 1200px;
   margin-bottom: 40px;
-  box-shadow: 0 10px 7px -5px rgba(#000, .4);
- 
- p {
-  padding-bottom: 20px;
- }
+  box-shadow: 0 10px 7px -5px rgba(#000, 0.4);
+
+  p {
+    padding-bottom: 20px;
+  }
 
   img {
-      padding: 20px;
-    }
+    padding: 20px;
+  }
 }
 
 h4.h4hero {
-  font-weight: $font-weight-light  !important;
+  font-weight: $font-weight-light !important;
 }
 
 .hero-inner {
@@ -163,22 +151,21 @@ h4.h4hero {
   }
 
   h1 {
-    margin-top: .7em;
+    margin-top: 0.7em;
     font-size: rem(40);
   }
 
   h3 {
     font-size: rem(20);
-    margin: .8em 0 1.2em;
-    
-    
+    margin: 0.8em 0 1.2em;
 
     @include media($tablet-up) {
       font-size: rem(24);
     }
   }
 
-  h3, em {
+  h3,
+  em {
     font-weight: $font-weight-light;
   }
 
@@ -189,12 +176,15 @@ h4.h4hero {
   strong {
     font-weight: $font-weight-bold;
   }
-  
 }
 
 //
 // Articles
 //
+
+.feature-image {
+  width: 300px;
+}
 
 .post {
   padding: $base-spacing 0;
@@ -208,10 +198,11 @@ h4.h4hero {
   font-size: rem(40);
   margin-bottom: 10px;
   line-height: 1.2em;
-  border-bottom: 1px rgba($light-gray-color, .3) dotted;
+  border-bottom: 1px rgba($light-gray-color, 0.3) dotted;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: disc;
 }
 
@@ -231,22 +222,13 @@ ul {
       &:focus {
         color: $primary-color;
         text-decoration: underline;
-      }  
+      }
     }
     a {
       color: $base-font-color;
-
-      &:hover,
-      &:active,
-      &:focus {
-        
-      }
-   
-
     }
   }
 }
-
 
 .social {
   @extend %clearfix;
@@ -273,14 +255,26 @@ ul {
 }
 
 .post-content {
-  h3, h4 {
-    margin: 1.2em 0 .05em 0;
+  h3,
+  h4 {
+    margin: 1.2em 0 0.05em 0;
   }
   h4 {
     font-size: 1.4rem;
   }
-}
+  td {
+    padding: 10px;
+  }
 
+  figure {
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+}
 
 .pagination {
   @extend %clearfix;
@@ -288,21 +282,24 @@ ul {
   margin: 2em 0;
 
   li {
-    padding: 0 .4em;
+    padding: 0 0.4em;
   }
 
-  li, a, span {
+  li,
+  a,
+  span {
     display: inline-block;
   }
 
-  a, span {
+  a,
+  span {
     line-height: 1.2em;
     font-size: rem(12);
   }
 
   .btn {
     color: $base-font-color;
-    border-color: rgba($light-gray-color, .8);
+    border-color: rgba($light-gray-color, 0.8);
   }
 
   span {
@@ -311,11 +308,10 @@ ul {
   }
 }
 
-
 /* Site footer */
 .site-footer {
   background-color: $white-color;
-  border-top: 1px solid rgba($light-gray-color, .5);
+  border-top: 1px solid rgba($light-gray-color, 0.5);
   padding: $base-spacing;
   text-align: center;
 
@@ -324,69 +320,94 @@ ul {
   }
 }
 
-
-
 // Steven Hubert Customizations
 
-img + em { 
-  display: block; 
+img + em {
+  display: block;
   text-align: center;
-  clear:both;
+  clear: both;
   font-size: 16px;
   padding: 0 0 40px 0;
   margin-top: -38px;
   font-family: $heading-font-family;
-  
 }
 
 .work {
- max-width: 1200px
+  max-width: 1200px;
 }
 
 .work-list {
   display: flex;
   row-gap: 20px;
- 
- 
- 
 
   h1 {
     font-size: 1.4em;
     line-height: 1em;
-    
   }
-
-
-
 
   .post {
     flex: auto;
     display: inline-flex;
-    
-    .post-header {
-      
-        width: 300px;
-        margin-right: 10px;
-        padding: 20px;
-      }
-    }
- 
-  }
 
-    @media (max-width: 500px) {
-      .post {
-        flex-wrap: wrap;
-        
-        .post-header {
-          
-           
-            padding: 20px;
-            margin-right: auto;
-            width: auto;
-            
-          }
-        }
-      }
-  .post-header {
-    margin-bottom: .8em;
+    .post-header {
+      width: 300px;
+      margin-right: 16px;
+    }
   }
+}
+
+@media (max-width: 500px) {
+  .post {
+    flex-wrap: wrap;
+    h1 {
+      font-size: 1.2em;
+      line-height: 1em;
+    }
+
+    .post-header {
+      padding: 5px;
+      margin-right: auto;
+      width: auto;
+    }
+  }
+}
+.post-header {
+  margin-bottom: 0.8em;
+}
+
+/* Modal */
+.lightbox {
+  /* Default to hidden */
+  display: none;
+
+  /* Overlay entire screen */
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  /* A bit of padding around image */
+  padding: 1em;
+
+  /* Translucent background */
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Unhide the lightbox when it's the target */
+.lightbox:target {
+  display: block;
+}
+
+.lightbox span {
+  /* Full width and height */
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  /* Size and position background image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
