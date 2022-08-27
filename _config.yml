@@ -35,9 +35,9 @@ google_analytics: UA-1735487-1
 # Author settings
 author:
   name: Steven Hubert
-  job: Digital Product and UX leader
-  bio: 'I enthusiastically bridge the divide between IT, Marketing and AdTech by implementing new technologies and novel work approaches to deliver meaningful content to customers and businesses alike.'
-  thumb: /images/sh.jpg
+  job: Product and UX leader
+  bio: 'I design and develop class leading digital products into enterprise scale systems.'
+  thumb: /images/avatar.png
 
   url: https://www.stevenhubert.com
   github: http://github.com/hubertron
