@@ -37,4 +37,4 @@ The above examples show the website prior to the UX and API intergration. It ser
   <p><img src="/images/WinterParkCart2022.jpg" alt="Winter Park 2022"></p>
   <figcaption>Cart Redesign, damage waiver upsell</figcaption>
 </figure>
-As part of this redesign and API integration we were able ot add very lightweight AI functionality to opportunistically upsell guests on related products.
+As part of this redesign and API integration we were able to add very lightweight AI functionality to opportunistically upsell guests on related products.

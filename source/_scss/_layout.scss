@@ -181,6 +181,9 @@ h4.h4hero {
 
 .post {
   padding: $base-spacing 0;
+  .card {
+    padding: 3em;
+  }
 }
 
 .post-header {
@@ -361,6 +364,9 @@ img + em {
       padding: 5px;
       margin-right: auto;
       width: auto;
+    }
+    .card {
+      padding: 0.7em;
     }
   }
 }
