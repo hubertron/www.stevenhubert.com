@@ -54,88 +54,7 @@ a:visited {
   }
 }
 
-/* test */
 
-.wrapper {
-  cursor: pointer;
-
-  width: 400px;
-  -webkit-transform: translateZ(0); /* webkit flicker fix */
-  -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
-}
-
-.wrapper .tooltip {
-  background: black;
-  bottom: 100%;
-  color: #fff;
-  display: block;
-  left: -20px;
-  margin-bottom: 15px;
-  opacity: 0;
-  padding: 10px;
-  pointer-events: none;
-  position: absolute;
-  width: 100%;
-  -webkit-transform: translateY(10px);
-  -moz-transform: translateY(10px);
-  -ms-transform: translateY(10px);
-  -o-transform: translateY(10px);
-  transform: translateY(10px);
-  -webkit-transition: all 0.25s ease-out;
-  -moz-transition: all 0.25s ease-out;
-  -ms-transition: all 0.25s ease-out;
-  -o-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
-  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
-  -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
-  -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
-  -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
-}
-
-/* This bridges the gap so you can mouse into the tooltip without it disappearing */
-.wrapper .tooltip:before {
-  bottom: -20px;
-  content: " ";
-  display: block;
-  height: 20px;
-  left: 0;
-  position: absolute;
-  width: 100%;
-}
-
-/* CSS Triangles - see Trevor's post */
-.wrapper .tooltip:after {
-  border-left: solid transparent 10px;
-  border-right: solid transparent 10px;
-  border-top: solid #1496bb 10px;
-  bottom: -10px;
-  content: " ";
-  height: 0;
-  left: 50%;
-  margin-left: -13px;
-  position: absolute;
-  width: 0;
-}
-
-.wrapper:hover .tooltip {
-  opacity: 1;
-  pointer-events: auto;
-  -webkit-transform: translateY(0px);
-  -moz-transform: translateY(0px);
-  -ms-transform: translateY(0px);
-  -o-transform: translateY(0px);
-  transform: translateY(0px);
-}
-
-/* IE can just show/hide with no transition */
-.lte8 .wrapper .tooltip {
-  display: none;
-}
-
-.lte8 .wrapper:hover .tooltip {
-  display: block;
-}
 
 </style>
 </head>
@@ -146,9 +65,10 @@ a:visited {
       <h1>Hello, I'm Steven Hubert</h1>
       <p>
         A seasoned product design and UX leader with a proven track record of delivering world-class products. </p>
-      <p>With over 15 years of digital experience, I have partnered with <a class="tooltip" href="https://wwww.mammothmountain.com">leading ski resorts</a>, ecomm and outdoor recreation companies, designing and developing innovative products that have gained recognition and praise from customers and industry peers alike.
+      <p>With over 15 years of digital experience, I have partnered with 
+          <a href="https://www.mammothmountain.com" target="_blank">leading ski resorts</a>, ecomm and outdoor recreation companies, designing and developing innovative products that have gained recognition and praise from customers and industry peers alike.
       </p>
-      <p> Most recently, I have been a key player in building the <a href="https://www.ikonpass.com">Ikon Pass</a> at <a href="https://www.alterramtnco.com">Alterra Mountain Company</a>, as well as developing an industry leading design systems for top ski resorts across North America. Prior to that, I led the product management practice for multiple leading agencies, including <A href="https://www.cpbgroup.com">CP+B</a>, <a href="https://www.grey.com">Grey</a>, <a href="http://domanistudios.com">Domani Studios</a>, and <a href="https://www.wundermanthompson.com">J. Walter Thompson</a>, and won numerous awards at prestigious events such as Cannes, SXSW, and <a href="https://thefwa.com/cases/we-choose-the-moon">The FWA</a>.
+      <p> Most recently, I have been a key player in building the <a href="https://www.ikonpass.com" target="_blank">Ikon Pass</a> at <a href="https://www.alterramtnco.com" target="_blank">Alterra Mountain Company</a>, as well as developing an industry leading design systems for top ski resorts across North America. Prior to that, I led the product management practice for multiple leading agencies, including <A href="https://www.cpbgroup.com" target="_blank">CP+B</a>, <a href="https://www.grey.com" target="_blank">Grey</a>, <a href="http://domanistudios.com" target="_blank">Domani Studios</a>, and <a href="https://www.wundermanthompson.com" target="_blank">J. Walter Thompson</a>, and won numerous awards at prestigious events such as Cannes, SXSW, and <a href="https://thefwa.com/cases/we-choose-the-moon" target="_blank">The FWA</a>.
       </p>
       <p> As a product design and UX leader, I bring a unique blend of creativity, strategic thinking, and technical expertise to every project I undertake. I am currently seeking my next big challenge, and I am confident that my skills and experience can add value to your organization. If you have a project that requires a dynamic and results-driven product design and UX leader, I would love to have a conversation. Let's get in touch on <a href="https://www.linkedin.com/in/stevenhubert/">LinkedIn</a>.
       </p>
@@ -157,24 +77,14 @@ a:visited {
 
       <div class="imageGroup">
 
-        <img class="featuredImage" src="https://d33wubrfki0l68.cloudfront.net/4b3be75f13ed6dddcac0f51b80045872cd03dce4/9393a/images/dg_globe.png">
-        <img class="featuredImage" src="https://d33wubrfki0l68.cloudfront.net/2ff2652812b40ab88bd4120d0676c5658ea88557/b32ab/images/canonnorthpolenov28.jpg">
-        <img class="featuredImage" src="https://d33wubrfki0l68.cloudfront.net/c629882d013997eb70f20b97321b28c37b422610/2bf9f/images/cnn.jpg">
-        <img class="featuredImage" src="https://d33wubrfki0l68.cloudfront.net/76e609842515521a6170bbacbce0715b862e8e3e/1d691/images/bearart_900.jpg">
-        <img class="featuredImage" src="https://d33wubrfki0l68.cloudfront.net/e5bbca4f15c2f8e2438cce781921897b5bef3c79/550d2/images/landing.jpg">
+        <a href="/works/digitalglobe-sales-conference/"><img class="featuredImage" src="/images/dg_globe.png"></a>
+        <a href="/works/canon"><img class="featuredImage" src="/images/thumbs/Canon_SL.jpg"></a>
+        <a href="/works/ketel1-vodka"><img class="featuredImage" src="/images/thumbs/ketel1.jpg"></a>
+        <a href="/works/mikes-hard-lemonade/"><img class="featuredImage" src="/images/thumbs/mhl.jpg"></a>
+        <a href="/works/we-choose-the-moon/"><img class="featuredImage" src="/images/moonthumb.jpg"></a>
       </div>
       <div>
-<!--
-        <div class="wrapper">
-          <a href="https://www.google.com">I have a tooltip.</a>
-          <div class="tooltip"><img src=" https://loremflickr.com/200/200"></div>
-        </div>
 
-        <div class="wrapper">
-          <a href="https://www.google.com">I havasdasdase a tooltip.</a>
-          <div class="tooltip"><img src=" https://www.graphis.com/media/uploads/cfe/entry/94c299b2-b9b4-413e-9d05-dc573270010d/AD11_8091_B.jpg" width=350></div>
-        </div>
-        -->
       </div>
 </container>
 </body></html>

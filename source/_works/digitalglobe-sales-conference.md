@@ -37,5 +37,5 @@ Finally to increase the excitement we designed a set of posters, gobos, and hand
 
 All of these elements combined to create a truly memorable experience that will leave the attendees feeling charged up and ready to succeed for DigitalGlobe.
 <br />
-![Globe](/images/dg_globe.png)
+
 ![Data](/images/dg_data.png)
