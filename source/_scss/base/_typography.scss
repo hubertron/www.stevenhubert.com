@@ -43,7 +43,9 @@ h6 {
 
 p {
   margin: 0 0 $small-spacing;
-  font-weight: $font-weight-light;
+  font-weight: $font-weight-normal;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
 }
 
 em {
@@ -55,14 +57,14 @@ small {
 }
 
 a {
-  color: $action-color;
-  text-decoration: none;
+  color: black;
+  text-decoration: solid underline lime 3px;
   @include transition(color $base-duration $base-timing);
 
   &:active,
   &:focus,
   &:hover {
-    color: shade($action-color, 25%);
+    color: $action-color;
   }
 }
 

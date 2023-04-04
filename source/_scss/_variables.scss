@@ -1,7 +1,7 @@
 // Typography
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Work+Sans:300,400,600');
-$base-font-family: 'EB Garamond', $helvetica;
-$heading-font-family: 'Work Sans', $base-font-family;
+@import url('https://use.typekit.net/dtr7gye.css');
+$base-font-family: 'linotype-sabon', sans-serif;
+$heading-font-family: 'linotype-sabon', $base-font-family;
 
 // Font Sizes
 $base-font-size: 20px;
@@ -23,7 +23,7 @@ $big-spacing: $base-spacing * 2.5;
 $base-z-index: 0;
 
 // Colors
-$primary-color: #bf6bff;
+$primary-color: lime;
 $white-color: #fff;
 $black-color: #000;
 $blue-color: #477dca;

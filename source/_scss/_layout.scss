@@ -1,7 +1,6 @@
 /*=====================================
 =            Layout styles            =
 =====================================*/
-@import url('//fonts.googleapis.com/css?family=Open+Sans:400,300,700');
 
 html,
 body {
@@ -13,7 +12,8 @@ body {
 
 body {
   border-top: 5px solid $primary-color;
-  background: linear-gradient(115deg, #de6bff, #028ade, #db3535);
+  /* background: linear-gradient(115deg, #de6bff, #028ade, #db3535); */
+  background-color: $white-color;
   background-attachment: fixed;
 }
 
@@ -27,8 +27,8 @@ body {
 
 .card {
   background-color: $white-color;
-  box-shadow: 0 10px 7px -5px rgba(#000, 0.4);
-  border-radius: 2px;
+  /* box-shadow: 0 10px 7px -5px rgba(#000, 0.4); */
+  /* border-radius: 2px; */
   margin: 0 0 $base-spacing;
   padding: $base-spacing $small-spacing;
 }
@@ -54,7 +54,9 @@ body {
 
   h1,
   a {
-    text-transform: lowercase;
+   font-weight: bold;
+   text-decoration: none;
+   font-size: 1.6rem;
   }
 
   .navbar {
@@ -182,7 +184,7 @@ h4.h4hero {
 .post {
   padding: $base-spacing 0;
   .card {
-    padding: 3em;
+    padding: 0
   }
 }
 
