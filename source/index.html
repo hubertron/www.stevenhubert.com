@@ -55,6 +55,170 @@ a:visited {
 }
 
 
+/* 
+  You want a simple and fancy tooltip?
+  Just copy all [data-tooltip] blocks:
+*/
+[data-tooltip] {
+  --arrow-size: 5px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Positioning and visibility settings of the tooltip */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  left: 50%;
+  bottom: calc(100% + var(--arrow-size));
+  pointer-events: none;
+  transition: 0.2s;
+  will-change: transform;
+}
+
+/* The actual tooltip with a dynamic width */
+[data-tooltip]:before {
+  content: attr(data-tooltip);
+  padding: 10px 18px;
+  min-width: 50px;
+  max-width: 300px;
+  width: max-content;
+  width: -moz-max-content;
+  font-size:  1rem;
+  background-color: black;
+ 
+  color: #fff;
+  text-align: center;
+  white-space: pre-wrap;
+  transform: translate(-50%,  calc(0px - var(--arrow-size))) scale(0.5);
+}
+
+/* Tooltip arrow */
+[data-tooltip]:after {
+  content: '';
+  border-style: solid;
+  border-width: var(--arrow-size) var(--arrow-size) 0px var(--arrow-size); /* CSS triangle */
+  border-color: rgba(55, 64, 70, 0.9) transparent transparent transparent;
+  transition-duration: 0s; /* If the mouse leaves the element, 
+                              the transition effects for the 
+                              tooltip arrow are "turned off" */
+  transform-origin: top;   /* Orientation setting for the
+                              slide-down effect */
+  transform: translateX(-50%) scaleY(0);
+}
+
+/* Tooltip becomes visible at hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  opacity: 1;
+}
+/* Scales from 0.5 to 1 -> grow effect */
+[data-tooltip]:hover:before {
+  transition-delay: 0.3s;
+  transform: translate(-50%, calc(0px - var(--arrow-size))) scale(1);
+}
+/* 
+  Arrow slide down effect only on mouseenter (NOT on mouseleave)
+*/
+[data-tooltip]:hover:after {
+  transition-delay: 0.5s; /* Starting after the grow effect */
+  transition-duration: 0.2s;
+  transform: translateX(-50%) scaleY(1);
+}
+/*
+  That's it for the basic tooltip.
+
+  If you want some adjustability
+  here are some orientation settings you can use:
+*/
+
+/* LEFT */
+/* Tooltip + arrow */
+[data-tooltip-location="left"]:before,
+[data-tooltip-location="left"]:after {
+  left: auto;
+  right: calc(100% + var(--arrow-size));
+  bottom: 50%;
+}
+
+/* Tooltip */
+[data-tooltip-location="left"]:before {
+  transform: translate(calc(0px - var(--arrow-size)), 50%) scale(0.5);
+}
+[data-tooltip-location="left"]:hover:before {
+  transform: translate(calc(0px - var(--arrow-size)), 50%) scale(1);
+}
+
+/* Arrow */
+[data-tooltip-location="left"]:after {
+  border-width: var(--arrow-size) 0px var(--arrow-size) var(--arrow-size);
+  border-color: transparent transparent transparent rgba(55, 64, 70, 0.9);
+  transform-origin: left;
+  transform: translateY(50%) scaleX(0);
+}
+[data-tooltip-location="left"]:hover:after {
+  transform: translateY(50%) scaleX(1);
+}
+
+
+
+/* RIGHT */
+[data-tooltip-location="right"]:before,
+[data-tooltip-location="right"]:after {
+  left: calc(100% + var(--arrow-size));
+  bottom: 50%;
+}
+
+[data-tooltip-location="right"]:before {
+  transform: translate(var(--arrow-size), 50%) scale(0.5);
+}
+[data-tooltip-location="right"]:hover:before {
+  transform: translate(var(--arrow-size), 50%) scale(1);
+}
+
+[data-tooltip-location="right"]:after {
+  border-width: var(--arrow-size) var(--arrow-size) var(--arrow-size) 0px;
+  border-color: transparent rgba(55, 64, 70, 0.9) transparent transparent;
+  transform-origin: right;
+  transform: translateY(50%) scaleX(0);
+}
+[data-tooltip-location="right"]:hover:after {
+  transform: translateY(50%) scaleX(1);
+}
+
+
+
+/* BOTTOM */
+[data-tooltip-location="bottom"]:before,
+[data-tooltip-location="bottom"]:after {
+  top: calc(100% + var(--arrow-size));
+  bottom: auto;
+}
+
+[data-tooltip-location="bottom"]:before {
+  transform: translate(-50%, var(--arrow-size)) scale(0.5);
+}
+[data-tooltip-location="bottom"]:hover:before {
+  transform: translate(-50%, var(--arrow-size)) scale(1);
+}
+
+[data-tooltip-location="bottom"]:after {
+  border-width: 0px var(--arrow-size) var(--arrow-size) var(--arrow-size);
+  border-color: transparent transparent rgba(55, 64, 70, 0.9) transparent;
+  transform-origin: bottom;
+}
+
+
+
+
+
+
+
+
+
 
 </style>
 </head>
@@ -66,7 +230,7 @@ a:visited {
       <p>
         A seasoned product design and UX leader with a proven track record of delivering world-class products. </p>
 
-      <p>Over the course of 18 years, I have honed my skills in the digital domain, working with <a href="https://www.mammothmountain.com" target="_blank">leading ski resorts</a>, <a href="https://www.michaeljfox.org" target="_blank">non-profits</a>, as well as both B2C and B2B businesses. My work has been widely recognized and praised by both customers and industry peers alike.</p>
+      <p>Over the course of 18 years, I have honed my skills in the digital domain, working with <a href="https://www.mammothmountain.com" target="_blank">leading ski resorts</a>, <a href="https://www.michaeljfox.org" target="_blank">non-profits</a>, as well as both <span data-tooltip="LL Bean, Comcast, Kraft, Windows, Ketel 1, Mike's Hard Lemonade, HSBC, Merill Lynch">B2C</span> and B2B businesses. My work has been widely recognized and praised by both customers and industry peers alike.</p>
 
       <p> Most recently, I have been a key player in building the <a href="https://www.ikonpass.com" target="_blank">Ikon Pass</a> at <a href="https://www.alterramtnco.com" target="_blank">Alterra Mountain Company</a>, as well as developing an industry leading design systems for top ski resorts across North America. Prior to that, I led the product management practice for multiple leading agencies, including <A href="https://www.cpbgroup.com" target="_blank">CP+B</a>, <a href="https://www.grey.com" target="_blank">Grey</a>, <a href="http://domanistudios.com" target="_blank">Domani Studios</a>, and <a href="https://www.wundermanthompson.com" target="_blank">J. Walter Thompson</a>, and won numerous awards at prestigious events such as Cannes, SXSW, and <a href="https://thefwa.com/cases/we-choose-the-moon" target="_blank">The FWA</a>.
       </p>
@@ -76,7 +240,10 @@ a:visited {
       <h2>Work</h2>
 
       <div class="imageGroup">
-
+        <a href="/works/ikon-pass"><img class="featuredImage" src="/images/thumbs/ikon_pass.jpg"></a>
+         <a href="https://www.alterramtnco.com"><img class="featuredImage" src="/images/thumbs/alterra.jpg"></a>
+        <a href="https://www.slopefillers.com/max-pass-2016-update/"><img class="featuredImage" src="/images/thumbs/maxpass.jpg"></a>
+        <a href="https://www.slopefillers.com/intrawest-passport-sales-page/"><img class="featuredImage" src="/images/thumbs/passport.jpg"></a>
         <a href="/works/digitalglobe-sales-conference/"><img class="featuredImage" src="/images/dg_globe.png"></a>
         <a href="/works/canon"><img class="featuredImage" src="/images/thumbs/Canon_SL.jpg"></a>
         <a href="/works/ketel1-vodka"><img class="featuredImage" src="/images/thumbs/ketel1.jpg"></a>
@@ -85,6 +252,5 @@ a:visited {
       </div>
       <div>
 
-      </div>
 </container>
 </body></html>
