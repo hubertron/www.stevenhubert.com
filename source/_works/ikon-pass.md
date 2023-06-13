@@ -47,4 +47,9 @@ As our brand matured so did our product matrix. From 2 core products we grew 6. 
 
 With the screenshot above you can see clear a few methods we use to merchandise the product.
 
-1.
+- A visual hierarchy of products from tallest to shortest
+- Clear left to right ordering
+- A yellow feature ball to call out the top tier benefit
+- Smart use of icons to support the lack of blackouts on the top tier product
+
+Ikon Pass is a dynamic brand that continues to disrupt the ski industry. The disruptions spans the gamut of product setup, ux, design and benefits.
