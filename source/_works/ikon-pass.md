@@ -52,4 +52,4 @@ With the screenshot above you can see clear a few methods we use to merchandise 
 - A yellow feature ball to call out the top tier benefit
 - Smart use of icons to support the lack of blackouts on the top tier product
 
-Ikon Pass is a dynamic brand that continues to disrupt the ski industry. The disruptions spans the gamut of product setup, ux, design and benefits.
+Ikon Pass is a dynamic brand that continues to disrupt the ski industry. The disruptions spans the gamut of product setup, ux, design and benefits. I'm honored to have been able to shape this product from inception to it's current state today.
