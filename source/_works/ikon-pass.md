@@ -33,7 +33,7 @@ Each year as we update our overall marketing campaign we give the homepage a des
   <span style="background-image: url('/images/ShopPasses.png')"></span>
 </a>
 
-As our brand matured so did our product matrix. From 2 core products we grew 6. Some yield better for Ikon Pass than others and wanted to maintain that fun design while clearly highlighted what we consider our "featured products". In the design comps above you can really see that play out successfully with the Ikon Base Pass Plus. This product by design isn't a huge seller but it does serve the need for a sub-section of the market. We didn't want to bury it in deep site map, so we developed a clever visual design to strike the right balance of presence and obscurity so that we can focus on the happy path for most users.
+As our brand matured so did our product matrix. From 2 core products we grew to 6. Some yield better for Ikon Pass than others and wanted to balance a unique brand design while clearly highlighted what we consider our "featured product". In the design comps above you can really see that play out successfully with the Ikon Base Pass Plus. This product isn't a huge seller but it does serve the need for a sub-section of the market. We didn't want to bury it in deep site map, so we developed a clever visual design to strike the right balance of presence and obscurity so that we can focus on the happy path for most users.
 
 <div style="display:flex">
 <figure>
