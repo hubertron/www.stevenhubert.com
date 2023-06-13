@@ -58,7 +58,7 @@ small {
 
 a {
   color: black;
-  text-decoration: solid underline lime 3px;
+  text-decoration: solid underline black 3px;
   @include transition(color $base-duration $base-timing);
 
   &:active,
